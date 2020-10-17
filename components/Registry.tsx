@@ -195,18 +195,18 @@ const Registry = () => {
                 } else {
                   // loading
                   return (
-                    <div className="mt-4 rounded-lg overflow-hidden border bg-black">
-                      <div className="bg-black h-10 w-full border-b px-4 py-3">
+                    <div className="mt-4 rounded-lg overflow-hidden border bg-white">
+                      <div className="bg-white h-10 w-full border-b px-4 py-3">
                         <div className="w-3/5 sm:w-1/5 bg-gray-200 h-4" />
                       </div>
                       <div className="w-full p-4">
-                        <div className="w-4/5 sm:w-1/3 bg-black h-8" />
-                        <div className="sm:w-2/3 bg-black h-3 mt-6" />
-                        <div className="w-5/6 sm:w-3/4 bg-black h-3 mt-4" />
-                        <div className="sm:w-3/5 bg-black h-3 mt-4" />
-                        <div className="w-3/4 bg-black h-3 mt-4" />
-                        <div className="sm:w-2/3 bg-black h-3 mt-4" />
-                        <div className="w-2/4 sm:w-3/5 bg-black h-3 mt-4" />
+                        <div className="w-4/5 sm:w-1/3 bg-gray-200 h-8" />
+                        <div className="sm:w-2/3 bg-gray-200 h-3 mt-6" />
+                        <div className="w-5/6 sm:w-3/4 bg-gray-200 h-3 mt-4" />
+                        <div className="sm:w-3/5 bg-gray-200 h-3 mt-4" />
+                        <div className="w-3/4 bg-gray-200 h-3 mt-4" />
+                        <div className="sm:w-2/3 bg-gray-200 h-3 mt-4" />
+                        <div className="w-2/4 sm:w-3/5 bg-gray-200 h-3 mt-4" />
                       </div>
                     </div>
                   );
@@ -306,7 +306,7 @@ function Breadcrumbs({
 }) {
   const segments = path.split("/").splice(1);
   return (
-    <p className="text-white pt-2 pb-4">
+    <p className="text-black pt-2 pb-4">
       <Link href="/">
         <a className="link">genemator.me</a>
       </Link>{" "}
@@ -372,7 +372,7 @@ function VersionSelector({
           <div className="max-w-xs rounded-md shadow-sm">
             <select
               id="version"
-              className="block bg-transparent text-white form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+              className="block bg-white text-black form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
               value={selectedVersion}
               onChange={({ target: { value: newVersion } }) =>
                 onChange(newVersion)
@@ -412,7 +412,7 @@ function DirectoryListing(props: {
     <div className="flex flex-col pt-4">
       <div className="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div className="inline-block min-w-full shadow-sm rounded-lg border overflow-hidden">
-          <div className="bg-transparent border-b py-2 px-4 flex justify-between">
+          <div className="bg-white border-b py-2 px-4 flex justify-between">
             <div className="flex items-center">
               <svg
                 fill="currentColor"
@@ -431,7 +431,7 @@ function DirectoryListing(props: {
           </div>
           <div>
             <table className="min-w-full table-fixed">
-              <tbody className="bg-transparent">
+              <tbody className="bg-white">
                 {props.dirEntries
                   .sort((a, b) => a.type.localeCompare(b.type))
                   .map((entry, i) => (
@@ -445,7 +445,7 @@ function DirectoryListing(props: {
                       <tr
                         tabIndex={0}
                         role="button"
-                        className={`table-row text-white hover:text-black hover:bg-white cursor-pointer${
+                        className={`table-row text-black hover:text-white hover:bg-black cursor-pointer${
                           i !== props.dirEntries.length - 1
                             ? " border-b border-gray-200"
                             : ""
