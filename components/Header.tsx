@@ -26,7 +26,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
     if (path !== "/") {
       return (
         <Link href="/">
-          <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
+          <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
             <svg
               className="flex-shrink-0 h-6 w-6"
               fill="none"
@@ -161,32 +161,6 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                 <div>
                   <nav className="grid row-gap-8">
                     {homeDetectResponsive()}
-                    <Link href="/posts">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-                          />
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          Posts
-                        </div>
-                      </a>
-                    </Link>
                     <Link href="/about">
                       <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
                         <svg
@@ -228,7 +202,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                       </a>
                     </Link>
                     <Link href="/x">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
+                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
                         <svg
                           className="flex-shrink-0 h-6 w-6"
                           fill="none"
@@ -247,26 +221,6 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                         </div>
                       </a>
                     </Link>
-                    <Link href="/socials">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          Socials
-                        </div>
-                      </a>
-                    </Link>
                   </nav>
                 </div>
               </div>
@@ -274,34 +228,34 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                 <div className="grid grid-cols-2 row-gap-4 col-gap-8">
                   <a
                     href="https://chisel.uz/"
-                    className="text-base leading-6 font-medium text-white hover:text-gray-300 transition ease-in-out duration-150"
+                    className="text-base leading-6 font-medium text-black hover:text-gray-500 transition ease-in-out duration-150"
                   >
                     Chisel Devs
                   </a>
                   <a
-                    href="https://deno.land/"
-                    className="text-base leading-6 font-medium text-white hover:text-gray-300 transition ease-in-out duration-150"
+                    href="https://t.me/SeventyPlus"
+                    className="text-base leading-6 font-medium text-black hover:text-gray-500 transition ease-in-out duration-150"
                   >
-                    Denoland
+                    +70
                   </a>
                   <a
-                    href="https://bsba.uz/"
-                    className="text-base leading-6 font-medium text-white hover:text-gray-300 transition ease-in-out duration-150"
+                    href="https://t.me/SeventyPlusBIS"
+                    className="text-base leading-6 font-medium text-black hover:text-gray-500 transition ease-in-out duration-150"
                   >
-                    BSBA™
+                    BIS
                   </a>
                   <a
-                    href="https://www.youtube.com/channel/UCLvAJjc5gvy_6QL2f-RRBuw"
-                    className="text-base leading-6 font-medium text-white hover:text-gray-300 transition ease-in-out duration-150"
+                    href="https://t.me/genemators"
+                    className="text-base leading-6 font-medium text-black hover:text-gray-500 transition ease-in-out duration-150"
                   >
-                    iBlogs
+                    Genemator's
                   </a>
                 </div>
                 <div className="space-y-6">
                   <a
                     target="_blank"
-                    href="https://github.com/genemators/genemators"
-                    className="w-full flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-white bg-transparent hover:bg-white hover:text-black focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
+                    href="https://github.com/00010023"
+                    className="w-full flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-black bg-transparent hover:bg-black hover:text-white focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
                   >
                     <svg
                       className="h-6 w-6"
@@ -344,13 +298,13 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                     </svg>
                   </a>
                   <span className="w-full flex rounded-md shadow-sm" />
-                  <p className="text-center text-base leading-6 font-medium text-white">
-                    Proudly crafted with{" "}
+                  <p className="text-center text-base leading-6 font-medium text-black">
+                    Proudly crafted by{" "}
                     <a
-                      href="https://vercel.com"
-                      className="text-gray-400 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="https://genemator.me"
+                      className="text-gray-700 hover:text-gray-500 transition ease-in-out duration-150"
                     >
-                      Vercel / Next.js
+                      Genemetor
                     </a>
                   </p>
                 </div>

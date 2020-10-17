@@ -21,8 +21,8 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="icon" type="image/png" href="/favicon.png" />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="msapplication-TileColor" content="#000000" />
-          <meta name="theme-color" content="#000000" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
           <Main />

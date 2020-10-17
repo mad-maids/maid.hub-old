@@ -2,50 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d44d30-c3a1-4c4b-b7e5-94cab8adf36d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package.json.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Notification.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Notification.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/database.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/musics.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/[post].tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/quotes.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/socials.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/v1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/v1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/v2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/v2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/v3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/v3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2002.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2003.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2004.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2005.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2006.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2007.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2008.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2009.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2010.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2011.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2012.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2013.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2014.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2015.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2016.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2017.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2018.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2019.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quotes/2020.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/database.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/database.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/registry_utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/registry_utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +93,7 @@
       <workItem from="1602898379846" duration="1404000" />
       <workItem from="1602908816010" duration="1735000" />
       <workItem from="1602952598616" duration="769000" />
-      <workItem from="1602957691818" duration="3161000" />
+      <workItem from="1602957691818" duration="4396000" />
     </task>
     <servers />
   </component>
@@ -226,5 +190,9 @@
       <screen x="0" y="26" width="1920" height="1054" />
     </state>
     <state x="624" y="254" key="run.anything.popup/0.26.1920.1054@0.26.1920.1054" timestamp="1602953655372" />
+    <state x="599" y="258" width="720" height="678" key="search.everywhere.popup" timestamp="1602961550149">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state x="599" y="258" width="720" height="678" key="search.everywhere.popup/0.26.1920.1054@0.26.1920.1054" timestamp="1602961550149" />
   </component>
 </project>
