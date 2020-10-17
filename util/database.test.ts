@@ -6,7 +6,7 @@ import { GithubDatabaseEntry } from "./registries/github";
 /* eslint-env jest */
 
 const DATABASE: {
-  [name: string]: GithubDatabaseEntry & NPMDatabaseEntry & URLDatabaseEntry;
+  [name: string]: GithubDatabaseEntry;
 } = db as any;
 
 test("each database entry should have a description", () => {
