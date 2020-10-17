@@ -1,0 +1,242 @@
+/* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Fette Haenel Fraktur";
+  src: url("https://genemator.me/fonts/FetteHaenelFraktur.ttf");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://genemator.me/fonts/JetBrains.woff2") format("woff2"),
+    url("https://genemator.me/fonts/JetBrains.woff") format("woff"),
+    url("https://genemator.me/fonts/JetBrains.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: "JetBrains Mono", monospace;
+}
+
+:root {
+  --grey: #5e5d5e;
+  --mid-grey: #3f3f3f;
+}
+
+select option {
+  background-color: rgba(0, 0, 0, 255);
+}
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 100px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 100px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 100px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 100px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 100px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 100px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 0px 100px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 0px 100px;
+  }
+}
+
+body {
+  background-color: black;
+  color: white;
+  background-size: 50px 50px;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      var(--mid-grey) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--mid-grey) 1px, transparent 1px);
+  -webkit-animation: bg-scrolling-reverse 15s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 15s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 15s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 15s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+::selection {
+  background-color: #1aff31;
+  color: black;
+}
+
+.genemator-title {
+  font-family: "Fette Haenel Fraktur", monospace;
+  font-size: 1.6rem;
+}
+
+.custom-error {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 30px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; /*linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17); */
+  }
+}
+
+.read-post {
+  color: #1aff31;
+}
+
+.read-post:hover {
+  color: #20983b;
+}
+
+.notification-area {
+  background: linear-gradient(270deg, #ffffff, #a5a5a5, #5c5b5b);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  -o-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo-head {
+  -webkit-animation: rotation 10s infinite linear;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 25%;
+  }
+}
+
+.animated-social {
+  stroke-dasharray: 3;
+  animation: dash 50s infinite linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
