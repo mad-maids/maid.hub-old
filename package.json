@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/genemators/genemators.git"
+    "url": "git+https://github.com/genemators/westhub.git"
   },
   "keywords": [
     "Portfolio",
@@ -27,7 +27,7 @@
   "author": "Genemator Sakhib <genemators@gmail.com> (genemator.me)",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/genemators/genemators/issues"
+    "url": "https://github.com/genemators/westhub/issues"
   },
   "homepage": "https://genemator.me",
   "dependencies": {
@@ -45,8 +45,8 @@
     "preact-render-to-string": "^5.1.10",
     "prism-react-renderer": "^1.1.1",
     "prismjs": "^1.21.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "github:preact-compat/react#1.0.0",
+    "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-transition-group": "^4.4.1",
     "swr": "^0.3.0",
     "tailwindcss": "^1.6.2",
