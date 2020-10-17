@@ -6,69 +6,38 @@ import Link from "next/link";
 const Footer = (props: { simple?: boolean }) => (
   <div
     className={
-      props.simple ? undefined : "bg-black border-t border-b border-gray-200"
+      props.simple ? undefined : "bg-white border-t border-b border-gray-700"
     }
   >
     <div className="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <nav className="-mx-5 -my-2 flex flex-wrap justify-center">
         <div className="px-5 py-2">
           <a
-            href="https://t.me/genemator_bot"
-            className="text-base leading-6 text-white hover:text-gray-200"
+            href="http://wiut.uz/"
+            className="text-base leading-6 text-black hover:text-gray-700"
           >
-            Assistant
+            WIUT
           </a>
         </div>
         <div className="px-5 py-2">
           <a
-            href="https://bsba.uz/whoarewe"
-            className="text-base leading-6 text-white hover:text-gray-200"
-          >
-            Team
-          </a>
-        </div>
-        <div className="px-5 py-2">
-          <Link href="/quotes">
-            <a className="text-base leading-6 text-white hover:text-gray-200">
-              Quotes
-            </a>
-          </Link>
-        </div>
-        <div className="px-5 py-2">
-          <a
-            href="https://github.com/chiseldevs"
-            className="text-base leading-6 text-white hover:text-gray-200"
+            href="https://github.com/4bis1"
+            className="text-base leading-6 text-black hover:text-gray-700"
           >
             Organisation
           </a>
         </div>
         <div className="px-5 py-2">
-          <a
-            href="https://www.twitch.tv/genemators"
-            className="text-base leading-6 text-white hover:text-gray-200"
-          >
-            Stream
-          </a>
-        </div>
-        <div className="px-5 py-2">
-          <Link href="/musics">
-            <a className="text-base leading-6 text-white hover:text-gray-200">
-              Station
-            </a>
-          </Link>
-        </div>
-        <div className="px-5 py-2">
-          <Link href="/posts">
-            <a className="text-base leading-6 text-white hover:text-gray-200">
+            <a href="https://t.me/s/SeventyPlusBIS"
+               className="text-base leading-6 text-black hover:text-gray-700">
               News
             </a>
-          </Link>
         </div>
       </nav>
       <div className="mt-9 flex justify-center">
         <a
-          href="https://github.com/genemators"
-          className="text-white hover:text-gray-300"
+          href="https://github.com/00010023"
+          className="text-black hover:text-gray-600"
         >
           <span className="sr-only">GitHub</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -80,8 +49,8 @@ const Footer = (props: { simple?: boolean }) => (
           </svg>
         </a>
         <a
-          href="https://t.me/genemator_bot"
-          className="ml-6 text-white hover:text-gray-300"
+          href="https://intranet.wiut.uz"
+          className="ml-6 text-black hover:text-gray-600"
         >
           <span className="sr-only">Assistant</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 50 50">
@@ -89,8 +58,8 @@ const Footer = (props: { simple?: boolean }) => (
           </svg>
         </a>
         <a
-          href="https://t.me/genemator"
-          className="ml-6 text-white hover:text-gray-300"
+          href="https://t.me/SeventyPlusBIS"
+          className="ml-6 text-black hover:text-gray-600"
         >
           <span className="sr-only">Telegram</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +72,7 @@ const Footer = (props: { simple?: boolean }) => (
           href="https://github.com/genemators/genemators/blob/master/LICENSE"
           className="hover:underline"
         >
-          V3 | MPL-2.0 Licensed | Copyright © 2017-2020 Genemator Sakhib
+          BETA 0.0.1 | MPL-2.0 Licensed | Copyright © 2020 00010023
         </a>
       </div>
     </div>

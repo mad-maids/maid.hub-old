@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Genemator's</title>
+        <title>WestHub Git Controller</title>
         <meta property="og:title" content="Welcome to Genemator's Website" />
         <meta
           property="og:description"
@@ -19,7 +19,7 @@ export default function Home() {
         />
       </Head>
       <Header subtitle="Home" />
-      <Notification news="GenoHub in V3?!" />
+      <Notification news="Computer Science Fundamentals Course Work Announced" />
       <div className="h-auto">
         <div className="flex justify-center items-center">
           <svg

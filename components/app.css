@@ -24,12 +24,12 @@ html {
 }
 
 :root {
-  --grey: #5e5d5e;
-  --mid-grey: #3f3f3f;
+  --grey: #000000;
+  --mid-grey: #232323;
 }
 
 select option {
-  background-color: rgba(0, 0, 0, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
@@ -74,8 +74,8 @@ select option {
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   background-size: 50px 50px;
   background-position: center;
   background-image: linear-gradient(
@@ -100,7 +100,7 @@ body {
 
 ::selection {
   background-color: #1aff31;
-  color: black;
+  color: #000000;
 }
 
 .genemator-title {
@@ -131,7 +131,7 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: white;
+    background: black;
     border-radius: 30px;
   }
 
