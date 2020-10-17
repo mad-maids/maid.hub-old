@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d44d30-c3a1-4c4b-b7e5-94cab8adf36d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/database.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/database.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/registries/github.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/registries/github.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/registry_utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/registry_utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +90,7 @@
       <workItem from="1602908816010" duration="1735000" />
       <workItem from="1602952598616" duration="769000" />
       <workItem from="1602957691818" duration="6197000" />
-      <workItem from="1602963969669" duration="4423000" />
+      <workItem from="1602963969669" duration="4581000" />
     </task>
     <servers />
   </component>

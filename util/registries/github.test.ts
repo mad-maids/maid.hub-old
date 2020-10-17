@@ -29,7 +29,6 @@ test("source url with custom default version", () => {
   expect(
     new GithubEntry({
       ...testDbEntry,
-      // eslint-disable-next-line @typescript-eslint/camelcase
       default_version: "custom",
     }).getRepositoryURL("/index.js", undefined)
   ).toEqual("https://github.com/octocat/test-repo1/tree/custom/index.js");

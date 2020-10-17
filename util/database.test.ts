@@ -2,8 +2,6 @@
 
 import db from "../database.json";
 import { GithubDatabaseEntry } from "./registries/github";
-import { NPMDatabaseEntry } from "./registries/npm";
-import { URLDatabaseEntry } from "./registries/url";
 
 /* eslint-env jest */
 
@@ -14,6 +12,7 @@ const DATABASE: {
 test("each database entry should have a description", () => {
   for (const key in DATABASE) {
     const entry = DATABASE[key];
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(entry.desc).toBeTruthy();
   }
@@ -22,10 +21,13 @@ test("each database entry should have a description", () => {
 test("a database entry of type github should have a owner and repo", () => {
   for (const key in DATABASE) {
     const entry = DATABASE[key];
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     if (entry.type == "github") {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       expect(entry.owner).toBeTruthy();
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       expect(entry.repo).toBeTruthy();
     }

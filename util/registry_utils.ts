@@ -5,6 +5,7 @@ import { GithubEntry, GithubDatabaseEntry } from "./registries/github";
 import { Entry, DatabaseEntry } from "./registries";
 
 function findDatabaseEntry(name: string): GithubDatabaseEntry | undefined {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return DATABASE[name];
 }
