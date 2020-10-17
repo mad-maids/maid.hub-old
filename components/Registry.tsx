@@ -163,14 +163,14 @@ const Registry = () => {
           {name}
           {version && `@${version}`} - westhub{!isStd ? "/x" : ""}
         </title>
-        <meta property="og:title" content="eXplorer - Project Explorer" />
+        <meta property="og:title" content="Modules - Project Explorer" />
         <meta
           property="og:description"
-          content="eXplorer helps you to manage or check Genemator's works and contributions with handy UI."
+          content="Modules on WestHub helps you to manage or check 00010023's works and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle={"eXplorer HEX"} />
+        <Header subtitle={"Modules File Companion"} />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 py-2 pb-8">
             <Breadcrumbs

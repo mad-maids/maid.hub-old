@@ -88,7 +88,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
             {homeDetectMenu()}
             <Link href="/x">
               <a className="text-base leading-6 font-medium text-black hover:text-gray-700 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                eXplorer
+                Modules
               </a>
             </Link>
           </nav>
@@ -168,7 +168,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                           />
                         </svg>
                         <div className="text-base leading-6 font-medium">
-                          eXplorer
+                          Modules
                         </div>
                       </a>
                     </Link>

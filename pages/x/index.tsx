@@ -29,27 +29,18 @@ const ThirdPartyRegistryList = () => {
   return (
     <>
       <Head>
-        <title>eXplorer | Genemator's</title>
+        <title>Modules | WestHub's</title>
         <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
           property="og:description"
-          content="eXplorer helps you to manage or check Genemator's works and contributions with handy UI."
+          content="eXplorer helps you to manage or check 00010023's works and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle="eXplorer" />
+        <Header subtitle="Modules" />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 pt-4">
-            <div className="text-black mt-4 sm:mt-8 break-words">
-              <p>
-                <span className="font-semibold">genemator.me/x</span> is a
-                project explorer that helps users to explore projects created or
-                contributed by <InlineCode>00010023</InlineCode>. Outer projects
-                like <InlineCode>organisation based projects</InlineCode> are
-                also counted as <InlineCode>00010023</InlineCode>'s work.
-              </p>
-            </div>
-            <div className="mt-12">
+            <div className="mt-6">
               <label htmlFor="query" className="font-medium sr-only">
                 Search...
               </label>

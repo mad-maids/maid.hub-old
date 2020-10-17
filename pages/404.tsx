@@ -26,7 +26,6 @@ export default function Custom404() {
         </div>
         <div className="flex mb-4 justify-center">
           <div className="text-black text-center xl:text-3xl lg:text-2xl text-1xl">
-            I'm so sorry, this page might be unavailable or underconstruction!
             Stay stunned for new updates...
           </div>
         </div>
@@ -35,7 +34,7 @@ export default function Custom404() {
             onClick={() => Router.back()}
             className="text-black text-center xl:text-3xl lg:text-2xl text-1xl hover:underline cursor-pointer"
           >
-            {"<-"} Go back to hell 🖤
+            {"<-"} Go back to git stage 🖤
           </a>
         </div>
       </div>
