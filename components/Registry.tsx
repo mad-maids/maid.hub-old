@@ -262,11 +262,23 @@ const Registry = () => {
                 <div className="bg-white border-b py-2 px-4 flex justify-between">
                   <div className="flex items-center">
                     <span className="font-medium text-black">
-                        Repo: <a href={repositoryURL?.replace(/\/tree\/(.*)/ig, "")} className="font-light link text-black">{repositoryURL?.replace(/\/tree\/(.*)/ig, "")}</a>
+                      Repo:{" "}
+                      <a
+                        href={repositoryURL?.replace(/\/tree\/(.*)/gi, "")}
+                        className="font-light link text-black"
+                      >
+                        {repositoryURL?.replace(/\/tree\/(.*)/gi, "")}
+                      </a>
                     </span>
                   </div>
                   <div>
-                    <a href={repositoryURL?.replace(/\/tree\/(.*)/ig, "") + "/archive/master.zip"} className="link ml-4 text-black">
+                    <a
+                      href={
+                        repositoryURL?.replace(/\/tree\/(.*)/gi, "") +
+                        "/archive/master.zip"
+                      }
+                      className="link ml-4 text-black"
+                    >
                       Download Project
                     </a>
                   </div>
