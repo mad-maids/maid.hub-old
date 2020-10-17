@@ -2,13 +2,9 @@
 
 import DATABASE from "../database.json";
 import { GithubEntry, GithubDatabaseEntry } from "./registries/github";
-import { URLEntry, URLDatabaseEntry } from "./registries/url";
-import { NPMEntry, NPMDatabaseEntry } from "./registries/npm";
 import { Entry, DatabaseEntry } from "./registries";
 
-function findDatabaseEntry(
-  name: string
-): GithubDatabaseEntry | URLDatabaseEntry | NPMDatabaseEntry | undefined {
+function findDatabaseEntry(name: string): GithubDatabaseEntry | undefined {
   // @ts-ignore
   return DATABASE[name];
 }
@@ -18,10 +14,6 @@ export function findEntry(name: string): Entry | null {
   switch (dbEntry?.type) {
     case "github":
       return new GithubEntry(dbEntry);
-    case "url":
-      return new URLEntry(dbEntry);
-    case "npm":
-      return new NPMEntry(dbEntry);
     default:
       return null;
   }

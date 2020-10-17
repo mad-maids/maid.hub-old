@@ -44,10 +44,9 @@ const ThirdPartyRegistryList = () => {
               <p>
                 <span className="font-semibold">genemator.me/x</span> is a
                 project explorer that helps users to explore projects created or
-                contributed by <InlineCode>00010023</InlineCode>. Outer
-                projects like{" "}
-                <InlineCode>organisation based projects</InlineCode> are also
-                counted as <InlineCode>00010023</InlineCode>'s work.
+                contributed by <InlineCode>00010023</InlineCode>. Outer projects
+                like <InlineCode>organisation based projects</InlineCode> are
+                also counted as <InlineCode>00010023</InlineCode>'s work.
               </p>
             </div>
             <div className="mt-12">

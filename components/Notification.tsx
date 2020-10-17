@@ -19,7 +19,12 @@ const Notification = ({ news }: { news: string }) => {
                   <span className="font-bold">News:</span> {news}
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
-                    <a href="https://t.me/s/SeventyPlusBIS" className="text-black underline">&rarr;</a>
+                  <a
+                    href="https://t.me/s/SeventyPlusBIS"
+                    className="text-black underline"
+                  >
+                    &rarr;
+                  </a>
                 </span>
               </p>
             </div>

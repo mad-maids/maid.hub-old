@@ -54,9 +54,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
           <div className="lg:w-0 lg:flex-1">
             <Link href="/">
               <a className="flex items-center">
-                <div className="text-black px-2 genemator-title">
-                  WestHub
-                </div>
+                <div className="text-black px-2 genemator-title">WestHub</div>
                 {subtitle && (
                   <div className="text-black">
                     {">"} {subtitle}
@@ -88,11 +86,6 @@ const Header = ({ subtitle }: { subtitle: string }) => {
           </div>
           <nav className="hidden md:flex space-x-10">
             {homeDetectMenu()}
-            <Link href="/about">
-              <a className="text-base leading-6 font-medium text-black hover:text-gray-700 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                About
-              </a>
-            </Link>
             <Link href="/x">
               <a className="text-base leading-6 font-medium text-black hover:text-gray-700 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
                 eXplorer
@@ -127,9 +120,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
               <div className="pt-5 pb-6 px-5 space-y-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-black genemator-title">
-                      WestHub
-                    </div>{" "}
+                    <div className="text-black genemator-title">WestHub</div>{" "}
                     {subtitle && (
                       <div className="text-black">
                         {">"} {subtitle}
@@ -161,46 +152,6 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                 <div>
                   <nav className="grid row-gap-8">
                     {homeDetectResponsive()}
-                    <Link href="/about">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <circle
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                          />
-                          <line
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            x1="12"
-                            y1="8"
-                            x2="12"
-                            y2="12"
-                          />
-                          <line
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            x1="12"
-                            y1="16"
-                            x2="12.01"
-                            y2="16"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          About
-                        </div>
-                      </a>
-                    </Link>
                     <Link href="/x">
                       <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
                         <svg

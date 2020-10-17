@@ -28,10 +28,12 @@ const Footer = (props: { simple?: boolean }) => (
           </a>
         </div>
         <div className="px-5 py-2">
-            <a href="https://t.me/s/SeventyPlusBIS"
-               className="text-base leading-6 text-black hover:text-gray-700">
-              News
-            </a>
+          <a
+            href="https://t.me/s/SeventyPlusBIS"
+            className="text-base leading-6 text-black hover:text-gray-700"
+          >
+            News
+          </a>
         </div>
       </nav>
       <div className="mt-9 flex justify-center">

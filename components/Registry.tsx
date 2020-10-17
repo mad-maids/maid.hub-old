@@ -9,6 +9,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import FileDisplay from "./FileDisplay";
 import { DirEntry } from "../util/registries";
+import { RawCodeBlock } from "./CodeBlock";
+import Markdown from "./Markdown";
 
 class RegistryError {
   constructor(public message: string) {}
@@ -159,7 +161,7 @@ const Registry = () => {
       <Head>
         <title>
           {name}
-          {version && `@${version}`} - genemator.me{!isStd ? "/x" : ""}
+          {version && `@${version}`} - westhub{!isStd ? "/x" : ""}
         </title>
         <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
@@ -255,6 +257,22 @@ const Registry = () => {
                 />
               </div>
             )}
+            <div className="mt-4">
+              <div className="shadow-sm rounded-lg border overflow-hidden bg-white">
+                <div className="bg-white border-b py-2 px-4 flex justify-between">
+                  <div className="flex items-center">
+                    <span className="font-medium text-black">
+                        Repo: <a href={repositoryURL?.replace(/\/tree\/(.*)/ig, "")} className="font-light link text-black">{repositoryURL?.replace(/\/tree\/(.*)/ig, "")}</a>
+                    </span>
+                  </div>
+                  <div>
+                    <a href={repositoryURL?.replace(/\/tree\/(.*)/ig, "") + "/archive/master.zip"} className="link ml-4 text-black">
+                      Download Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <Footer simple />
@@ -308,7 +326,7 @@ function Breadcrumbs({
   return (
     <p className="text-black pt-2 pb-4">
       <Link href="/">
-        <a className="link">genemator.me</a>
+        <a className="link">westhub</a>
       </Link>{" "}
       /{" "}
       {!isStd && (
