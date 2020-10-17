@@ -49,7 +49,7 @@ const Footer = (props: { simple?: boolean }) => (
           </svg>
         </a>
         <a
-          href="https://intranet.wiut.uz"
+          href="https://t.me/senpai_chanbot"
           className="ml-6 text-black hover:text-gray-600"
         >
           <span className="sr-only">Assistant</span>
@@ -69,7 +69,7 @@ const Footer = (props: { simple?: boolean }) => (
       </div>
       <div className="mt-9 flex justify-center text-center">
         <a
-          href="https://github.com/genemators/genemators/blob/master/LICENSE"
+          href="https://github.com/genemators/westhub/blob/master/LICENSE"
           className="hover:underline"
         >
           BETA 0.0.1 | MPL-2.0 Licensed | Copyright © 2020 00010023
