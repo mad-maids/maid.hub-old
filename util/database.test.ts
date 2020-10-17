@@ -2,13 +2,12 @@
 
 import db from "../database.json";
 import { GithubDatabaseEntry } from "./registries/github";
-import { NPMDatabaseEntry } from "./registries/npm";
 import { URLDatabaseEntry } from "./registries/url";
 
 /* eslint-env jest */
 
 const DATABASE: {
-  [name: string]: GithubDatabaseEntry & NPMDatabaseEntry & URLDatabaseEntry;
+  [name: string]: GithubDatabaseEntry & URLDatabaseEntry;
 } = db as any;
 
 test("each database entry should have a description", () => {
