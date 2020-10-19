@@ -255,7 +255,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                       href="https://genemator.me"
                       className="text-gray-700 hover:text-gray-500 transition ease-in-out duration-150"
                     >
-                      4BIS1
+                      4BIS1 & Genemator
                     </a>
                   </p>
                 </div>
