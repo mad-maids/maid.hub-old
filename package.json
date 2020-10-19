@@ -1,6 +1,6 @@
 {
   "name": "westhub",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "private": true,
   "description": "Yet another git portal for Westminster International University in Tashkent",
   "scripts": {

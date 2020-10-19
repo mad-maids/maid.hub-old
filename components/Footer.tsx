@@ -75,7 +75,7 @@ const Footer = (props: { simple?: boolean }) => (
           href="https://github.com/genemators/westhub/blob/master/LICENSE"
           className="hover:underline"
         >
-          BETA 0.0.1 | MPL-2.0 Licensed | Copyright © 2020 Genemator
+          ALPHA 1.0.1 | MPL-2.0 Licensed | Copyright © 2020 Genemator
         </a>
       </div>
     </div>
