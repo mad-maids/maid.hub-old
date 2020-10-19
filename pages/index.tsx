@@ -43,6 +43,7 @@ export default function Home() {
             <path
               d="M 50,0 A 50,50 0 0,0 -50,0Z"
               transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)"
+              fill="#ffffff"
             />
           </svg>
         </div>
