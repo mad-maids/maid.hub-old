@@ -24,6 +24,7 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <svg viewBox="0 0 160 160" width="450" height="450">
             <circle cx="80" cy="80" r="50" />
+            <circle cx="80" cy="80" r="40" fill="#333333" />
             <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
               <path
                 d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
