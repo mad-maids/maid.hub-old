@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { id } from "../id.json";
 
 const Footer = (props: { simple?: boolean }) => (
   <div
@@ -38,7 +39,7 @@ const Footer = (props: { simple?: boolean }) => (
       </nav>
       <div className="mt-9 flex justify-center">
         <a
-          href="https://github.com/00010023"
+          href={"https://github.com/" + id}
           className="text-black hover:text-gray-600"
         >
           <span className="sr-only">GitHub</span>
@@ -74,7 +75,7 @@ const Footer = (props: { simple?: boolean }) => (
           href="https://github.com/genemators/westhub/blob/master/LICENSE"
           className="hover:underline"
         >
-          BETA 0.0.1 | MPL-2.0 Licensed | Copyright © 2020 00010023
+          BETA 0.0.1 | MPL-2.0 Licensed | Copyright © 2020 Genemator
         </a>
       </div>
     </div>

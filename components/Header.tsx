@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Transition from "./Transition";
 import React, { useState } from "react";
+import {id} from "../id.json"
 
 const Header = ({ subtitle }: { subtitle: string }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -94,7 +95,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
           </nav>
           <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
             <a
-              href="https://github.com/00010023"
+              href={"https://github.com/" + id}
               target="_blank"
               className="whitespace-no-wrap text-base leading-6 font-medium text-black hover:text-gray-700 focus:outline-none focus:text-gray-400"
             >

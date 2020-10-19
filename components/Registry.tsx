@@ -11,6 +11,7 @@ import FileDisplay from "./FileDisplay";
 import { DirEntry } from "../util/registries";
 import { RawCodeBlock } from "./CodeBlock";
 import Markdown from "./Markdown";
+import {id} from "../id.json"
 
 class RegistryError {
   constructor(public message: string) {}
@@ -166,7 +167,7 @@ const Registry = () => {
         <meta property="og:title" content="Modules - Project Explorer" />
         <meta
           property="og:description"
-          content="Modules on WestHub helps you to manage or check 00010023's works and contributions with handy UI."
+          content={"Modules on WestHub helps you to manage or check " + id + "'s works and contributions with handy UI."}
         />
       </Head>
       <div className="min-h-full">
