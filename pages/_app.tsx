@@ -26,7 +26,7 @@ export default class MyApp extends App {
     return (
       <div className="h-screen">
         <Head>
-          <meta property="og:site_name" content="Genemator's" />
+          <meta property="og:site_name" content="WestHubs's" />
           <title>WestHub's Git Controller</title>
         </Head>
         <Component {...pageProps} />

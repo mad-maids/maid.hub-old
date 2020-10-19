@@ -33,7 +33,7 @@ const ThirdPartyRegistryList = () => {
         <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
           property="og:description"
-          content="eXplorer helps you to manage or check 00010023's works and contributions with handy UI."
+          content="Module Explorer helps you to manage or check 00010023's works and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
