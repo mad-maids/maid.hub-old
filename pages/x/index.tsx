@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { entries } from "../../util/registry_utils";
 import InlineCode from "../../components/InlineCode";
-import {id} from "../../id.json"
+import { id } from "../../id.json";
 
 import Head from "next/head";
 
@@ -34,7 +34,11 @@ const ThirdPartyRegistryList = () => {
         <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
           property="og:description"
-          content={"Module Explorer helps you to manage or check " + id + "'s works and contributions with handy UI."}
+          content={
+            "Module Explorer helps you to manage or check " +
+            id +
+            "'s works and contributions with handy UI."
+          }
         />
       </Head>
       <div className="min-h-full">
