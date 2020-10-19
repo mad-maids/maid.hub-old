@@ -258,32 +258,35 @@ const Registry = () => {
               </div>
             )}
             <div className="mt-4">
-              <div className="shadow-sm rounded-lg border overflow-hidden bg-white">
-                <div className="bg-white border-b py-2 px-4 flex justify-between">
-                  <div className="flex items-center">
-                    <span className="font-medium text-black">
-                      Repo:{" "}
-                      <a
-                        href={repositoryURL?.replace(/\/tree\/(.*)/gi, "")}
-                        className="font-light link text-black cut-text"
+              <a
+                href={
+                  repositoryURL?.replace(/\/tree\/(.*)/gi, "") +
+                  "/archive/master.zip"
+                }
+              >
+                <div className="shadow-sm rounded-lg border overflow-hidden bg-white text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
+                  <div className="border-b py-2 px-4 flex justify-center">
+                    <div className="-m-3 p-3 flex items-center space-x-3 rounded-md">
+                      <svg
+                        className="flex-shrink-0 h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                       >
-                        {repositoryURL?.replace(/\/tree\/(.*)/gi, "")}
-                      </a>
-                    </span>
-                  </div>
-                  <div>
-                    <a
-                      href={
-                        repositoryURL?.replace(/\/tree\/(.*)/gi, "") +
-                        "/archive/master.zip"
-                      }
-                      className="link ml-4 text-black"
-                    >
-                      Download Project
-                    </a>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                        />
+                      </svg>
+                      <div className="text-base leading-6 font-medium">
+                        Download
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>

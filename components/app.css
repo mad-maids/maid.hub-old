@@ -215,14 +215,6 @@ body {
   border-radius: 50%;
 }
 
-.cut-text {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 160px;
-  height: 1.2em;
-  white-space: nowrap;
-}
-
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
