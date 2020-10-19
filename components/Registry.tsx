@@ -1,7 +1,7 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React, { useMemo, useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import { parseNameVersion, isReadme, findEntry } from "../util/registry_utils";
@@ -9,6 +9,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import FileDisplay from "./FileDisplay";
 import { DirEntry } from "../util/registries";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { RawCodeBlock } from "./CodeBlock";
 import Markdown from "./Markdown";
 import { id } from "../id.json";
@@ -62,7 +63,10 @@ const Registry = () => {
     string | null | undefined
   >();
   const [readme, setReadme] = useState<string | null | undefined>();
-
+  const linkUrl: string | undefined = repositoryURL?.replace(
+    /\/tree\/(.*)/gi,
+    ""
+  );
   // Fetch raw source
   useEffect(() => {
     setRaw(undefined);
@@ -263,14 +267,65 @@ const Registry = () => {
               </div>
             )}
             <div className="mt-4">
-              <a
-                href={
-                  repositoryURL?.replace(/\/tree\/(.*)/gi, "") +
-                  "/archive/master.zip"
-                }
+              <CopyToClipboard
+                onCopy={() => {
+                  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                  // @ts-ignore
+                  document.getElementById("copy-git").innerHTML =
+                    "Link has been copied!";
+                  setTimeout(() => {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    document.getElementById("copy-git").innerHTML =
+                      "Copy Clone Link";
+                  }, 1000);
+                }}
+                text={linkUrl + ".git"}
               >
-                <div className="shadow-sm rounded-lg border overflow-hidden bg-white text-black hover:bg-black hover:text-white transition ease-in-out duration-150">
-                  <div className="border-b py-2 px-4 flex justify-center">
+                <div className="shadow-sm rounded-t-lg border overflow-hidden bg-white text-black hover:bg-black hover:text-white active:bg-gray-600 active:text-white transition ease-in-out duration-150 cursor-pointer">
+                  <div className="py-2 px-4 flex justify-center">
+                    <div className="-m-3 p-3 flex items-center space-x-3 rounded-md">
+                      <svg
+                        className="flex-shrink-0 h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
+                        />
+                      </svg>
+                      <div
+                        id="copy-git"
+                        className="text-base leading-6 font-medium"
+                      >
+                        Copy clone link
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CopyToClipboard>
+              <a
+                onClick={() => {
+                  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                  // @ts-ignore
+                  document.getElementById("download-git").innerHTML =
+                    "Download will start shortly!";
+                  Router.push(linkUrl + "/archive/master.zip");
+                  setTimeout(() => {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    document.getElementById("download-git").innerHTML =
+                      "Download Project";
+                  }, 1000);
+                }}
+                download
+              >
+                <div className="shadow-sm rounded-b-lg border overflow-hidden bg-white text-black hover:bg-black hover:text-white active:bg-gray-600 active:text-white transition ease-in-out duration-150 cursor-pointer">
+                  <div className="py-2 px-4 flex justify-center">
                     <div className="-m-3 p-3 flex items-center space-x-3 rounded-md">
                       <svg
                         className="flex-shrink-0 h-6 w-6"
@@ -285,8 +340,11 @@ const Registry = () => {
                           d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                         />
                       </svg>
-                      <div className="text-base leading-6 font-medium">
-                        Download
+                      <div
+                        id="download-git"
+                        className="text-base leading-6 font-medium"
+                      >
+                        Download Project
                       </div>
                     </div>
                   </div>
