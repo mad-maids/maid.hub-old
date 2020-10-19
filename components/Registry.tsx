@@ -265,7 +265,7 @@ const Registry = () => {
                       Repo:{" "}
                       <a
                         href={repositoryURL?.replace(/\/tree\/(.*)/gi, "")}
-                        className="font-light link text-black"
+                        className="font-light link text-black cut-text"
                       >
                         {repositoryURL?.replace(/\/tree\/(.*)/gi, "")}
                       </a>
