@@ -9,7 +9,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import FileDisplay from "./FileDisplay";
 import { DirEntry } from "../util/registries";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import CopyToClipboard from "react-copy-to-clipboard";
 import { RawCodeBlock } from "./CodeBlock";
 import Markdown from "./Markdown";
 import { id } from "../id.json";
