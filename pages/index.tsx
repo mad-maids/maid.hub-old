@@ -27,7 +27,7 @@ export default function Home() {
             <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
               <path
                 d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
-                fill="#8c8c8c"
+                fill="#000000"
               >
                 <animateTransform
                   attributeName="transform"
@@ -39,15 +39,10 @@ export default function Home() {
                 />
               </path>
             </g>
-            <path
-              d="M 50,0 A 50,50 0 0,0 -50,0Z"
-              transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)"
-              fill="#000000"
-            />
             <g transform=" matrix(0.866, 0.5, 0.25, 0.433, 80, 80)">
               <path
                 d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
-                fill="#8c8c8c"
+                fill="#000000"
               >
                 <animateTransform
                   attributeName="transform"
@@ -59,11 +54,6 @@ export default function Home() {
                 />
               </path>
             </g>
-            <path
-              d="M 50,0 A 50,50 0 0,0 -50,0Z"
-              transform="matrix(0.866, 0.5, -0.5, 0.866, 80, 80)"
-              fill="#000000"
-            />
           </svg>
         </div>
         <div className="flex mb-4 justify-center">
