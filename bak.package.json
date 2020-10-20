@@ -22,13 +22,7 @@
     "npm": ">=6.14.5",
     "yarn": ">=1.22.0"
   },
-  "keywords": [
-    "Portfolio",
-    "NextJS",
-    "Next",
-    "JS",
-    "Genemator"
-  ],
+  "keywords": ["Portfolio", "NextJS", "Next", "JS", "Genemator"],
   "author": "Genemator Sakhib <genemators@gmail.com> (genemator.me)",
   "license": "MPL-2.0",
   "bugs": {
