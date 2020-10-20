@@ -57,7 +57,7 @@ export default function Home() {
           </svg>
         </div>
         <div className="flex mb-4 justify-center">
-          <div className="genemator-title text-black text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
+          <div className="font-bold px-3 text-black text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
             WestHub's Git
           </div>
         </div>
