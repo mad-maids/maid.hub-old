@@ -205,7 +205,6 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                 </div>
                 <div className="space-y-6">
                   <a
-                    target="_blank"
                     href="https://github.com/00010023"
                     className="w-full flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-black genemator-title bg-transparent hover:bg-black hover:text-white focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
                   >
