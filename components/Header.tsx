@@ -95,7 +95,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
           </nav>
           <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
             <a
-              href={"https://github.com/" + id}
+              href={"https://genemator.me/"}
               target="_blank"
               className="whitespace-no-wrap text-base leading-6 font-medium genemator-title text-black hover:text-gray-700 focus:outline-none focus:text-gray-400"
             >
@@ -203,7 +203,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                 </div>
                 <div className="space-y-6">
                   <a
-                    href={"https://github.com/" + id}
+                    href={"https://genemator.me/"}
                     className="w-full flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-black genemator-title bg-transparent hover:bg-black hover:text-white focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
                   >
                     Genemator's
