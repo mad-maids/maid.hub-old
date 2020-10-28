@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Transition from "./Transition";
 import React, { useState } from "react";
-import { id } from "../id.json";
 
 const Header = ({ subtitle }: { subtitle: string }) => {
   const [menuOpen, setMenuOpen] = useState(false);
