@@ -5,11 +5,17 @@
     "repo": "csf",
     "desc": "Computer Science Fundamentals classes codes where I code with Olga Yugay in Python"
   },
-  "Foundamentals of Programming": {
+  "Computer Science Fundamentals (Coursework)": {
+    "type": "github",
+    "owner": "00010023",
+    "repo": "csf.coursework",
+    "desc": "Computer Science Fundamentals classes coursework written in Python"
+  },
+  "Fundamentals of Programming": {
     "type": "github",
     "owner": "00010023",
     "repo": "fop",
-    "desc": "FunPro couse module homeworks"
+    "desc": "FunPro course module homeworks"
   },
   "Web Technology": {
     "type": "github",
