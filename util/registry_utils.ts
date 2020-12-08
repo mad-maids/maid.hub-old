@@ -1,7 +1,7 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import DATABASE from "../database.json";
-import { GithubEntry, GithubDatabaseEntry } from "./registries/github";
+import { GithubEntry, GithubDatabaseEntry } from "./github";
 import { Entry, DatabaseEntry } from "./registries";
 
 function findDatabaseEntry(name: string): GithubDatabaseEntry | undefined {
