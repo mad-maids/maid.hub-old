@@ -89,9 +89,9 @@ function FileDisplay(props: {
               <div className="px-4">
                 <Markdown
                   source={props.raw!}
-                  displayURL={"https://genemator.me" + props.canonicalPath}
+                  displayURL={"https://genemator.uz" + props.canonicalPath}
                   sourceURL={props.sourceURL}
-                  baseURL={"https://genemator.me" + props.baseURL}
+                  baseURL={"https://genemator.uz" + props.baseURL}
                 />
               </div>
             );

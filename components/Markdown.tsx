@@ -164,7 +164,7 @@ function transformLinkUri(displayURL: string, baseURL: string) {
     // Manual links should not have trailing .md
     if (
       hrefURL?.pathname?.startsWith("/manual") &&
-      hrefURL?.origin === "https://genemator.me"
+      hrefURL?.origin === "https://genemator.uz"
     ) {
       hrefURL.pathname = hrefURL.pathname.replace(/\.md$/, "");
       href = hrefURL.href;

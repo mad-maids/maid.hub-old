@@ -94,7 +94,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
           </nav>
           <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
             <a
-              href={"https://genemator.me/"}
+              href={"https://genemator.uz/"}
               target="_blank"
               className="whitespace-no-wrap text-base leading-6 font-medium genemator-title text-black hover:text-gray-700 focus:outline-none focus:text-gray-400"
             >
@@ -202,7 +202,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                 </div>
                 <div className="space-y-6">
                   <a
-                    href={"https://genemator.me/"}
+                    href={"https://genemator.uz/"}
                     className="w-full flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-black genemator-title bg-transparent hover:bg-black hover:text-white focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
                   >
                     Genemator's
@@ -211,7 +211,7 @@ const Header = ({ subtitle }: { subtitle: string }) => {
                   <p className="text-center text-base leading-6 font-medium text-black">
                     Proudly crafted by{" "}
                     <a
-                      href="https://genemator.me"
+                      href="https://genemator.uz"
                       className="text-gray-700 hover:text-gray-500 transition ease-in-out duration-150"
                     >
                       4BIS1 & Genemator
