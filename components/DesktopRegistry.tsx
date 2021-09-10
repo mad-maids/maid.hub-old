@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import { parseNameVersion, isReadme, findEntry } from "../util/registry_utils";
-import Header from "./Header";
-import Footer from "./Footer";
 import FileDisplay from "./FileDisplay";
 import { DirEntry } from "../util/registries";
 
