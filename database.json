@@ -1,14 +1,8 @@
 {
-  "asciinator": {
+  "All In One": {
     "type": "github",
-    "owner": "genemators",
-    "repo": "asciinator",
-    "desc": "The userbot telegram client created by Genemator in order to manage messages"
-  },
-  "betacraft": {
-    "type": "github",
-    "owner": "genemators",
-    "repo": "betacraft",
-    "desc": "The minecraft server manager written in Python3"
+    "owner": "wiut-bis",
+    "repo": "sekai",
+    "desc": "All in one materials repo by the WIUT BIS devs"
   }
 }
