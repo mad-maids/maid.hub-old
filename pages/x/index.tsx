@@ -29,15 +29,15 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
   return (
     <>
       <Head>
-        <title>eXplorer | Maid's Hub</title>
-        <meta property="og:title" content="eXplorer - Project Explorer" />
+        <title>LMS | Maid's Hub</title>
+        <meta property="og:title" content="LMS - Module Explorer" />
         <meta
           property="og:description"
-          content="eXplorer helps you to manage or check Genemator's works and contributions with handy UI."
+          content="LMS helps you to manage or check Module resources and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle="eXplorer" />
+        <Header subtitle="LMS" />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 pt-4">
             <div className="text-white mt-4 sm:mt-8 break-words">

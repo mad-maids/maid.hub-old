@@ -169,7 +169,7 @@ const Registry = (): React.ReactElement => {
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle={"eXplorer HEX"} />
+        <Header subtitle={"LMS"} />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 py-2 pb-8">
             <Breadcrumbs
