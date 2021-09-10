@@ -60,7 +60,7 @@ export default function Home(): React.ReactElement {
             </svg>
           </div>
           <div className="flex mb-4 justify-center">
-            <div className="font-bold px-3 text-white text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
+            <div className="genemator-colorful font-bold px-3 text-white text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
               Maid's Hub
             </div>
           </div>

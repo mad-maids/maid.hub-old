@@ -46,12 +46,11 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
         <div className="max-w-screen-lg mx-auto">
           <div className="border-b-2 border-gray-100 pb-10">
             <h2 className="text-4xl font-bold tracking-tight">
-              Posts {"<|>"} News
+              Posts {"<|>"} Maid Times
             </h2>
             <div className="mt-3 sm:mt-4">
               <p className="text-xl leading-7 text-white">
-                Get more information or read about Genemator's thoughts in this
-                page!
+                Freshly published important WIUT news by Mad Maids
               </p>
             </div>
           </div>
