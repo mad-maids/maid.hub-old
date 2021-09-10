@@ -81,9 +81,9 @@ const NewsPostPage = (props: Props): React.ReactElement => {
             baseURL={props.markdown}
           />
         </div>
-        <a href="tg://resolve?domain=genemators">
+        <a href="tg://resolve?domain=SeventyPlus">
           <div className="mt-4 text-center border rounded hover:text-black hover:bg-white">
-            Channel
+            Telegram Channel
           </div>
         </a>
       </div>
