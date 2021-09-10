@@ -309,7 +309,7 @@ function Breadcrumbs({
   return (
     <p className="text-white pt-2 pb-4">
       <Link href="/x">
-        <a className="link">&lt;-</a>
+        <a className="link border rounded-md p-1">&lt;-</a>
       </Link>{" "}
       /{" "}
       {!isStd && (
