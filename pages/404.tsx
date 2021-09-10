@@ -10,7 +10,7 @@ export default function Custom404(): React.ReactElement {
   return (
     <>
       <Head>
-        <title>Oops, 404! | Genemator's</title>
+        <title>Oops, 404! | Mad Maid's</title>
         <meta property="og:title" content="404 Whoopie!" />
         <meta
           property="og:description"

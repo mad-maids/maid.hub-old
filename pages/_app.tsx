@@ -19,18 +19,14 @@ Router.events.on("routeChangeComplete", () => {
 });
 Router.events.on("routeChangeError", () => NProgress.done());
 
-export default class GenoWebsiteApp extends App {
+export default class MaidWebsiteApp extends App {
   render(): React.ReactElement {
     const { Component, pageProps } = this.props;
     return (
       <div className="h-screen">
         <Head>
-          <meta
-            property="og:image"
-            content="https://genemator.uz/preview.png"
-          />
-          <meta property="og:site_name" content="Genemator's" />
-          <title>Genemator's Portfolio Website</title>
+          <meta property="og:site_name" content="Mad Maid's Hub" />
+          <title>Mad Maid's Hub</title>
         </Head>
         <Component {...pageProps} />
       </div>

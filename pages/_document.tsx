@@ -8,7 +8,7 @@ import Document, {
   DocumentInitialProps,
 } from "next/document";
 
-export default class GenoDocDocument extends Document {
+export default class MaidDocDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {

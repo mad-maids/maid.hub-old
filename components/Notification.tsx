@@ -24,9 +24,9 @@ const Notification = ({ news }: { news: string }): React.ReactElement => {
                   {news}
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
-                  <Link href="/quotes">
+                  <Link href="/posts">
                     <a className="text-black underline select-none">
-                      Read my blog &rarr;
+                      Browse more &rarr;
                     </a>
                   </Link>
                 </span>

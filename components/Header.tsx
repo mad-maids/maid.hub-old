@@ -55,7 +55,7 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
             <Link href="/">
               <a className="flex items-center">
                 <div className="text-white px-2 genemator-title">
-                  Genemator's
+                  Maid's Times
                 </div>
                 {subtitle && (
                   <div className="text-white">
@@ -93,30 +93,15 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
                 Posts
               </a>
             </Link>
-            <Link href="/about">
-              <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                About
-              </a>
-            </Link>
-            <Link href="/quotes">
-              <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                Quotes
-              </a>
-            </Link>
             <Link href="/x">
               <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                eXplorer
-              </a>
-            </Link>
-            <Link href="/socials">
-              <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                Socials
+                LMS
               </a>
             </Link>
           </nav>
           <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
             <a
-              href="https://desktop.genemator.uz/"
+              href="https://intranet.maid.uz/"
               target="_blank"
               rel="noreferrer"
               className="whitespace-no-wrap genemator-title text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400"
@@ -154,7 +139,7 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="text-white genemator-title">
-                      Genemator's
+                      Mad Maid's
                     </div>{" "}
                     {subtitle && (
                       <div className="text-white">
@@ -213,84 +198,6 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
                         </div>
                       </a>
                     </Link>
-                    <Link href="/about">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <circle
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                          />
-                          <line
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            x1="12"
-                            y1="8"
-                            x2="12"
-                            y2="12"
-                          />
-                          <line
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            x1="12"
-                            y1="16"
-                            x2="12.01"
-                            y2="16"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          About
-                        </div>
-                      </a>
-                    </Link>
-                    <Link href="/quotes">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <polyline
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            points="21 8 21 21 3 21 3 8"
-                          />
-                          <rect
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            x="1"
-                            y="3"
-                            width="22"
-                            height="5"
-                          />
-                          <line
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            x1="10"
-                            y1="12"
-                            x2="14"
-                            y2="12"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          Quotes
-                        </div>
-                      </a>
-                    </Link>
                     <Link href="/x">
                       <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
                         <svg
@@ -307,27 +214,7 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
                           />
                         </svg>
                         <div className="text-base leading-6 font-medium">
-                          eXplorer
-                        </div>
-                      </a>
-                    </Link>
-                    <Link href="/socials">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          Socials
+                          LMS
                         </div>
                       </a>
                     </Link>
@@ -337,16 +224,16 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
               <div className="py-6 px-5 space-y-6">
                 <div className="grid grid-cols-2 row-gap-4 col-gap-8">
                   <a
-                    href="https://xinux.uz/"
+                    href="https://github.com/mad-maids"
                     className="text-base leading-6 font-medium text-white hover:text-gray-300 transition ease-in-out duration-150"
                   >
-                    Xinux
+                    GitHub
                   </a>
                   <a
-                    href="https://desktop.genemator.uz/"
+                    href="https://t.me/madmaids"
                     className="text-base leading-6 font-medium text-white hover:text-gray-300 transition ease-in-out duration-150"
                   >
-                    BSBA™
+                    Telegram
                   </a>
                 </div>
                 <div className="space-y-6">
