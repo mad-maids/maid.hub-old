@@ -138,9 +138,7 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
               <div className="pt-5 pb-6 px-5 space-y-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-white genemator-title">
-                      Mad Maid's
-                    </div>{" "}
+                    <div className="text-white genemator-title">Mad Maid's</div>{" "}
                     {subtitle && (
                       <div className="text-white">
                         {">"} {subtitle}
