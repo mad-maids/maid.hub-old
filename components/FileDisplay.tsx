@@ -42,6 +42,11 @@ function FileDisplay(props: {
         </div>
         <div>
           {props.sourceURL && (
+            <a href={props.sourceURL} className="link ml-4 text-white" download>
+              Download
+            </a>
+          )}
+          {props.sourceURL && (
             <a href={props.sourceURL} className="link ml-4 text-white">
               Source
             </a>

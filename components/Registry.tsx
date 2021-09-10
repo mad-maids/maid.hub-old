@@ -169,7 +169,7 @@ const Registry = (): React.ReactElement => {
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle={"LMS"} />
+        <Header subtitle={"LMS Browser"} />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 py-2 pb-8">
             <Breadcrumbs
@@ -308,8 +308,8 @@ function Breadcrumbs({
   const segments = path.split("/").splice(1);
   return (
     <p className="text-white pt-2 pb-4">
-      <Link href="/">
-        <a className="link">hub.maid.uz</a>
+      <Link href="/x">
+        <a className="link">&lt;-</a>
       </Link>{" "}
       /{" "}
       {!isStd && (
