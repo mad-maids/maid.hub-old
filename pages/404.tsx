@@ -25,7 +25,7 @@ export default function Custom404(): React.ReactElement {
           </div>
         </div>
         <div className="flex mb-4 justify-center">
-          <div className="text-white text-center xl:text-3xl lg:text-2xl text-1xl">
+          <div className="text-white text-center xl:text-3xl lg:text-2xl text-1xl sm:px-32">
             I'm so sorry, this page might be unavailable or underconstruction!
             Stay stunned for new updates...
           </div>

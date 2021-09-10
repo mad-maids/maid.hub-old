@@ -24,42 +24,7 @@ export default function Home(): React.ReactElement {
       <Notification news={news} />
       <div className="h-auto">
         <div className="h-auto">
-          <div className="flex justify-center items-center">
-            <svg viewBox="0 0 160 160" width="450" height="450">
-              <circle cx="80" cy="80" r="50" fill="#ffffff" />
-              <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
-                <path
-                  d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
-                  fill="#ffffff"
-                >
-                  <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="360 0 0"
-                    to="0 0 0"
-                    dur="1s"
-                    repeatCount="indefinite"
-                  />
-                </path>
-              </g>
-              <g transform=" matrix(0.866, 0.5, 0.25, 0.433, 80, 80)">
-                <path
-                  d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
-                  fill="#ffffff"
-                >
-                  <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="360 0 0"
-                    to="0 0 0"
-                    dur="1s"
-                    repeatCount="indefinite"
-                  />
-                </path>
-              </g>
-            </svg>
-          </div>
-          <div className="flex mb-4 justify-center">
+          <div className="flex mt-48 mb-4 justify-center">
             <div className="genemator-colorful font-bold px-3 text-white text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
               Maid's Hub
             </div>
@@ -71,8 +36,13 @@ export default function Home(): React.ReactElement {
           </div>
           <div className="flex wrap mb-4 mt-4 justify-center mb-32">
             <Link href={"/x"} as="/wtf">
-              <div className="bg-black text-white text-center xl:text-3xl lg:text-2xl text-1xl border rounded hover:text-black hover:bg-white cursor-pointer m-4">
-                {" <\\ enter the darkness />"}
+              <div className="bg-white text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
+                {"LMS"}
+              </div>
+            </Link>
+            <Link href={"/posts"} as="/wtf">
+              <div className="bg-white text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
+                {"Posts"}
               </div>
             </Link>
           </div>
