@@ -37,7 +37,7 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle="LMS" />
+        <Header subtitle="LMS" type="Lms" />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 pt-4">
             <div className="text-white mt-4 sm:mt-8 break-words">

@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Transition from "./Transition";
 import React, { useState } from "react";
 
-const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
+const Header = ({ type, subtitle }: { type?: string, subtitle: string }): React.ReactElement => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const path = useRouter().pathname;
@@ -55,7 +55,7 @@ const Header = ({ subtitle }: { subtitle: string }): React.ReactElement => {
             <Link href="/">
               <a className="flex items-center">
                 <div className="text-white px-2 genemator-title">
-                  Maid's Times
+                  Maid's {type ? type : "Hub"}
                 </div>
                 {subtitle && (
                   <div className="text-white">

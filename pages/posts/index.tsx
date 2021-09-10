@@ -41,7 +41,7 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
           content="At this page you can list existing posts in our website!"
         />
       </Head>
-      <Header subtitle="Posts" />
+      <Header subtitle="Posts" type="Times" />
       <div className="pt-8 pb-20 px-4 sm:px-6 lg:pt-8 lg:pb-28 lg:px-8">
         <div className="max-w-screen-lg mx-auto">
           <div className="border-b-2 border-gray-100 pb-10">
