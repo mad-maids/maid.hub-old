@@ -34,7 +34,7 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
   return (
     <>
       <Head>
-        <title>Posts | Genemator's</title>
+        <title>Posts | Maid's Times</title>
         <meta property="og:title" content="Page where you can list posts" />
         <meta
           property="og:description"

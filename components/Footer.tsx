@@ -1,6 +1,7 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React from "react";
+import Image from "next/image"
 
 const Footer = (props: { simple?: boolean }): React.ReactElement => (
   <div
@@ -57,6 +58,14 @@ const Footer = (props: { simple?: boolean }): React.ReactElement => (
           className="hover:underline"
         >
           V0.1 | MPL-2.0 Licensed | Copyright © 2020-2021 Mad Maids
+        </a>
+      </div>
+      <div className="mt-3 flex justify-center text-center">
+        <a
+          href="https://vercel.com/?utm_source=mad-maids&utm_campaign=oss"
+          className="hover:underline"
+        >
+          Proudly, powered by Vercel
         </a>
       </div>
     </div>

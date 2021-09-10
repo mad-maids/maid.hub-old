@@ -39,7 +39,7 @@ const NewsPostPage = (props: Props): React.ReactElement => {
   return (
     <>
       <Head>
-        <title>{props.meta.title} | Genemator's</title>
+        <title>{props.meta.title} | Maid's Times</title>
         <meta property="og:title" content={props.meta.title} />
         <meta property="og:description" content={props.meta.snippet} />
         <meta property="telegram" />

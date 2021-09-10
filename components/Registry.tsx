@@ -159,13 +159,13 @@ const Registry = (): React.ReactElement => {
       <Head>
         <title>
           {name}
-          {version && `@${version}`} - genemator.uz
+          {version && `@${version}`} - hub.maid.uz
           {!isStd ? "/x" : ""}
         </title>
-        <meta property="og:title" content="eXplorer - Project Explorer" />
+        <meta property="og:title" content="Hub LMS - Module Explorer" />
         <meta
           property="og:description"
-          content="eXplorer helps you to manage or check Genemator's works and contributions with handy UI."
+          content="LMS helps you to manage or check WIUT modules' resources and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
@@ -309,7 +309,7 @@ function Breadcrumbs({
   return (
     <p className="text-white pt-2 pb-4">
       <Link href="/">
-        <a className="link">genemator.uz</a>
+        <a className="link">hub.maid.uz</a>
       </Link>{" "}
       /{" "}
       {!isStd && (

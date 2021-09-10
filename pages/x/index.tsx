@@ -29,7 +29,7 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
   return (
     <>
       <Head>
-        <title>eXplorer | Genemator's</title>
+        <title>eXplorer | Maid's Hub</title>
         <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
           property="og:description"
@@ -42,12 +42,12 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 pt-4">
             <div className="text-white mt-4 sm:mt-8 break-words">
               <p>
-                <span className="font-semibold">genemator.uz/x</span> is a
-                project explorer that helps users to explore projects created or
-                contributed by <InlineCode>Genemator Sakhib</InlineCode>. Outer
-                projects like{" "}
-                <InlineCode>organisation based projects</InlineCode> are also
-                counted as Genemator's work.
+                <span className="font-semibold">hub.maid.uz/x</span> is a
+                module explorer that helps students to explore module resources
+                that was copied from official <InlineCode>WIUT Intranet</InlineCode>.{" "}
+                Our Intranet isn't the place where you can get first party information.{" "}
+                <InlineCode>Kind request to check</InlineCode> <a href="https://intranet.wiut.uz">WIUT Intranet</a> once in a while
+                to avoid unexpected misunderstandings.
               </p>
             </div>
             <div className="mt-12">
