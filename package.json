@@ -1,5 +1,5 @@
 {
-  "name": "westhub",
+  "name": "maid.hub",
   "version": "1.0.1",
   "private": true,
   "description": "Yet another git portal for Westminster International University in Tashkent",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/genemators/westhub.git"
+    "url": "git+https://github.com/mad-maids/maid.hub.git"
   },
   "engines": {
     "node": ">=12.0.0",
@@ -32,9 +32,9 @@
   "author": "Genemator Sakhib <genemators@gmail.com> (genemator.uz)",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/genemators/westhub/issues"
+    "url": "https://github.com/mad-maids/maid.hub/issues"
   },
-  "homepage": "https://student.genemator.uz",
+  "homepage": "https://hub.maid.uz",
   "dependencies": {
     "@prefresh/next": "^0.4.0",
     "@tailwindcss/ui": "^0.5.0",
