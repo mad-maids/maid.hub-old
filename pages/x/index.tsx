@@ -44,10 +44,10 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
               <p>
                 <span className="font-semibold">hub.maid.uz/x</span> is a module
                 explorer that helps students to explore module resources that
-                was copied from official <InlineCode>WIUT Intranet</InlineCode>.{" "}
+                was copied from official <a href="https://intranet.wiut.uz"><InlineCode>WIUT Intranet</InlineCode></a>.{" "}
                 Our Intranet isn't the place where you can get first party
                 information. <InlineCode>Kind request to check</InlineCode>{" "}
-                <a href="https://intranet.wiut.uz">WIUT Intranet</a> once in a
+                <a href="https://intranet.wiut.uz"><InlineCode>WIUT Intranet</InlineCode></a> once in a
                 while to avoid unexpected misunderstandings.
               </p>
             </div>
