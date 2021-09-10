@@ -1,6 +1,6 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
-import { Entry, DirEntry, DatabaseEntry } from "./registries";
+import { Entry, DirEntry, DatabaseEntry } from "../registries";
 
 export interface GithubDatabaseEntry extends DatabaseEntry {
   type: "github";
@@ -12,10 +12,10 @@ export interface GithubDatabaseEntry extends DatabaseEntry {
 
 export class GithubEntry implements Entry {
   public desc: string;
-  private owner: string;
-  private repo: string;
-  private path?: string;
-  private defaultVersion?: string;
+  private readonly owner: string;
+  private readonly repo: string;
+  private readonly path?: string;
+  private readonly defaultVersion?: string;
 
   constructor(databaseEntry: GithubDatabaseEntry) {
     this.desc = databaseEntry.desc;

@@ -1,10 +1,14 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import DATABASE from "../database.json";
-import { GithubEntry, GithubDatabaseEntry } from "./github";
+import { GithubEntry, GithubDatabaseEntry } from "./registries/github";
+import { URLEntry, URLDatabaseEntry } from "./registries/url";
+import { NPMEntry, NPMDatabaseEntry } from "./registries/npm";
 import { Entry, DatabaseEntry } from "./registries";
 
-function findDatabaseEntry(name: string): GithubDatabaseEntry | undefined {
+function findDatabaseEntry(
+  name: string
+): GithubDatabaseEntry | URLDatabaseEntry | NPMDatabaseEntry | undefined {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return DATABASE[name];
@@ -15,6 +19,10 @@ export function findEntry(name: string): Entry | null {
   switch (dbEntry?.type) {
     case "github":
       return new GithubEntry(dbEntry);
+    case "url":
+      return new URLEntry(dbEntry);
+    case "npm":
+      return new NPMEntry(dbEntry);
     default:
       return null;
   }
@@ -27,6 +35,7 @@ export function parseNameVersion(
   return [name, version];
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function fileTypeFromURL(filename: string) {
   const f = filename.toLowerCase();
   if (f.endsWith(".ts")) {
@@ -47,6 +56,18 @@ export function fileTypeFromURL(filename: string) {
     return "rust";
   } else if (f.endsWith(".py")) {
     return "python";
+  } else if (f.endsWith(".cs")) {
+    return "csharp";
+  } else if (f.endsWith(".php")) {
+    return "php";
+  } else if (f.endsWith(".cpp") || f.endsWith(".cxx") || f.endsWith(".cc")) {
+    return "cpp";
+  } else if (f.endsWith(".ps1") || f.endsWith(".psm1") || f.endsWith(".psd1")) {
+    return "powershell";
+  } else if (f.endsWith(".c")) {
+    return "c";
+  } else if (f.endsWith(".css")) {
+    return "css";
   } else if (f.endsWith(".wasm")) {
     return "wasm";
   } else if (f.toLocaleLowerCase().endsWith("makefile")) {
@@ -64,6 +85,7 @@ export function fileTypeFromURL(filename: string) {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function isReadme(filename: string) {
   return (
     filename.toLowerCase() === "readme.md" ||

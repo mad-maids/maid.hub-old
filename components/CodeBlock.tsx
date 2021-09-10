@@ -27,6 +27,12 @@ export interface CodeBlockProps {
     | "text"
     | "rust"
     | "python"
+    | "csharp"
+    | "cpp"
+    | "c"
+    | "php"
+    | "powershell"
+    | "css"
     | "toml"
     | "wasm"
     | "makefile"
@@ -39,7 +45,10 @@ export const RawCodeBlock = ({
   className: extraClassName,
   disablePrefixes,
   enableLineRef = false,
-}: CodeBlockProps & { className?: string; enableLineRef?: boolean }) => {
+}: CodeBlockProps & {
+  className?: string;
+  enableLineRef?: boolean;
+}): React.ReactElement => {
   const [hashValue, setHashValue] = useState("");
   const codeDivClassNames = "token-line text-right select-none text-xs";
   if (enableLineRef) {
@@ -65,7 +74,10 @@ export const RawCodeBlock = ({
         if (hash.length) {
           const idEl = document.getElementById(hash[0]);
           if (idEl) {
-            idEl.scrollIntoView({ block: "center", behavior: "smooth" });
+            idEl.scrollIntoView({
+              block: "center",
+              behavior: "smooth",
+            });
             return;
           }
         }
@@ -78,6 +90,7 @@ export const RawCodeBlock = ({
       Prism={Prism}
       theme={light}
       code={code}
+      /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
       // @ts-ignore
       language={
         language === "shell" ? "bash" : language === "text" ? "diff" : language
@@ -148,7 +161,11 @@ export const RawCodeBlock = ({
   );
 };
 
-const CodeBlock = ({ code, language, disablePrefixes }: CodeBlockProps) => {
+const CodeBlock = ({
+  code,
+  language,
+  disablePrefixes,
+}: CodeBlockProps): React.ReactElement => {
   return (
     <RawCodeBlock
       code={code}

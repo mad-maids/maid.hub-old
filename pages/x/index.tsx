@@ -6,11 +6,10 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { entries } from "../../util/registry_utils";
 import InlineCode from "../../components/InlineCode";
-import { id } from "../../id.json";
 
 import Head from "next/head";
 
-const ThirdPartyRegistryList = () => {
+const ThirdPartyRegistryList = (): React.ReactElement => {
   const [query, setQuery] = React.useState("");
 
   const list = useMemo(
@@ -30,28 +29,34 @@ const ThirdPartyRegistryList = () => {
   return (
     <>
       <Head>
-        <title>Modules | WestHub's</title>
+        <title>eXplorer | Genemator's</title>
         <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
           property="og:description"
-          content={
-            "Module Explorer helps you to manage or check " +
-            id +
-            "'s works and contributions with handy UI."
-          }
+          content="eXplorer helps you to manage or check Genemator's works and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle="Modules" />
+        <Header subtitle="eXplorer" />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 pt-4">
-            <div className="mt-6">
+            <div className="text-white mt-4 sm:mt-8 break-words">
+              <p>
+                <span className="font-semibold">genemator.uz/x</span> is a
+                project explorer that helps users to explore projects created or
+                contributed by <InlineCode>Genemator Sakhib</InlineCode>. Outer
+                projects like{" "}
+                <InlineCode>organisation based projects</InlineCode> are also
+                counted as Genemator's work.
+              </p>
+            </div>
+            <div className="mt-12">
               <label htmlFor="query" className="font-medium sr-only">
                 Search...
               </label>
               <input
                 id="query"
-                className="text-black bg-white block w-full px-4 py-2 leading-normal border rounded-lg outline-none shadow hover:shadow-sm focus:shadow-sm appearance-none focus:border-gray-300 hover:border-gray-300 mt-1"
+                className="text-white bg-transparent block w-full px-4 py-2 leading-normal border rounded-lg outline-none shadow hover:shadow-sm focus:shadow-sm appearance-none focus:border-gray-300 hover:border-gray-300 mt-1"
                 type="text"
                 placeholder="Search..."
                 value={query}
@@ -61,18 +66,18 @@ const ThirdPartyRegistryList = () => {
           </div>
           <div className="sm:max-w-screen-lg sm:mx-auto sm:px-6 md:px-8 pb-4 sm:pb-12">
             {list.length == 0 ? (
-              <div className="px-4 sm:px-0 py-4 text-center sm:text-left text-sm leading-5 font-medium text-black truncate">
+              <div className="px-4 sm:px-0 py-4 text-center sm:text-left text-sm leading-5 font-medium text-white truncate">
                 Project doesn't exist or not found!
               </div>
             ) : (
-              <div className="bg-white sm:shadow border overflow-hidden sm:rounded-md mt-4">
+              <div className="bg-transparent sm:shadow border overflow-hidden sm:rounded-md mt-4">
                 <ul>
                   {list.map((name, i) => {
                     const link = `/x/${name}`;
                     return (
                       <li className={i !== 0 ? "border-t" : ""} key={i}>
                         <Link href="/x/[identifier]" as={link}>
-                          <a className="block hover:bg-black hover:text-white focus:outline-none focus:bg-white transition duration-150 ease-in-out">
+                          <a className="block hover:bg-white hover:text-black focus:outline-none focus:bg-white transition duration-150 ease-in-out">
                             <div className="flex items-center px-4 sm:px-6 py-2">
                               <div className="min-w-0 flex-1 flex items-center">
                                 <div className="min-w-0 flex-1">

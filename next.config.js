@@ -7,13 +7,13 @@ module.exports = withPrefresh({
     redirects() {
       return [
         {
-          source: "/about.html",
-          destination: "/about",
+          source: "/manual.html",
+          destination: "/manual",
           permanent: true,
         },
         {
-          source: "/posts.html",
-          destination: "/posts",
+          source: "/benchmarks.html",
+          destination: "/benchmarks",
           permanent: true,
         },
       ];

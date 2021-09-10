@@ -45,7 +45,7 @@ interface MarkdownProps {
   baseURL: string;
 }
 
-function Markdown(props: MarkdownProps) {
+function Markdown(props: MarkdownProps): React.ReactElement | null {
   useEffect(() => {
     const id = setTimeout(() => {
       let { hash } = location;

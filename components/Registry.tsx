@@ -1,7 +1,7 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React, { useMemo, useState, useEffect } from "react";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import { parseNameVersion, isReadme, findEntry } from "../util/registry_utils";
@@ -9,16 +9,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 import FileDisplay from "./FileDisplay";
 import { DirEntry } from "../util/registries";
-import CopyToClipboard from "react-copy-to-clipboard";
-import { RawCodeBlock } from "./CodeBlock";
-import Markdown from "./Markdown";
-import { id } from "../id.json";
 
 class RegistryError {
   constructor(public message: string) {}
 }
 
-const Registry = () => {
+const Registry = (): React.ReactElement => {
   const { query, asPath, push } = useRouter();
   const isStd = asPath.startsWith("/std");
   const { name, version, path } = useMemo(() => {
@@ -63,10 +59,7 @@ const Registry = () => {
     string | null | undefined
   >();
   const [readme, setReadme] = useState<string | null | undefined>();
-  const linkUrl: string | undefined = repositoryURL?.replace(
-    /\/tree\/(.*)/gi,
-    ""
-  );
+
   // Fetch raw source
   useEffect(() => {
     setRaw(undefined);
@@ -166,20 +159,17 @@ const Registry = () => {
       <Head>
         <title>
           {name}
-          {version && `@${version}`} - westhub{!isStd ? "/x" : ""}
+          {version && `@${version}`} - genemator.uz
+          {!isStd ? "/x" : ""}
         </title>
-        <meta property="og:title" content="Modules - Project Explorer" />
+        <meta property="og:title" content="eXplorer - Project Explorer" />
         <meta
           property="og:description"
-          content={
-            "Modules on WestHub helps you to manage or check " +
-            id +
-            "'s works and contributions with handy UI."
-          }
+          content="eXplorer helps you to manage or check Genemator's works and contributions with handy UI."
         />
       </Head>
       <div className="min-h-full">
-        <Header subtitle={"Modules File Companion"} />
+        <Header subtitle={"eXplorer HEX"} />
         <div className="">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 py-2 pb-8">
             <Breadcrumbs
@@ -206,18 +196,18 @@ const Registry = () => {
                 } else {
                   // loading
                   return (
-                    <div className="mt-4 rounded-lg overflow-hidden border bg-white">
-                      <div className="bg-white h-10 w-full border-b px-4 py-3">
+                    <div className="mt-4 rounded-lg overflow-hidden border bg-black">
+                      <div className="bg-black h-10 w-full border-b px-4 py-3">
                         <div className="w-3/5 sm:w-1/5 bg-gray-200 h-4" />
                       </div>
                       <div className="w-full p-4">
-                        <div className="w-4/5 sm:w-1/3 bg-gray-200 h-8" />
-                        <div className="sm:w-2/3 bg-gray-200 h-3 mt-6" />
-                        <div className="w-5/6 sm:w-3/4 bg-gray-200 h-3 mt-4" />
-                        <div className="sm:w-3/5 bg-gray-200 h-3 mt-4" />
-                        <div className="w-3/4 bg-gray-200 h-3 mt-4" />
-                        <div className="sm:w-2/3 bg-gray-200 h-3 mt-4" />
-                        <div className="w-2/4 sm:w-3/5 bg-gray-200 h-3 mt-4" />
+                        <div className="w-4/5 sm:w-1/3 bg-black h-8" />
+                        <div className="sm:w-2/3 bg-black h-3 mt-6" />
+                        <div className="w-5/6 sm:w-3/4 bg-black h-3 mt-4" />
+                        <div className="sm:w-3/5 bg-black h-3 mt-4" />
+                        <div className="w-3/4 bg-black h-3 mt-4" />
+                        <div className="sm:w-2/3 bg-black h-3 mt-4" />
+                        <div className="w-2/4 sm:w-3/5 bg-black h-3 mt-4" />
                       </div>
                     </div>
                   );
@@ -266,91 +256,6 @@ const Registry = () => {
                 />
               </div>
             )}
-            <div className="mt-4">
-              <CopyToClipboard
-                onCopy={() => {
-                  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                  // @ts-ignore
-                  document.getElementById("copy-git").innerHTML =
-                    "Link has been copied!";
-                  setTimeout(() => {
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore
-                    document.getElementById("copy-git").innerHTML =
-                      "Copy Clone Link";
-                  }, 1000);
-                }}
-                text={linkUrl + ".git"}
-              >
-                <div className="shadow-sm rounded-t-lg border overflow-hidden bg-white text-black hover:bg-black hover:text-white active:bg-gray-600 active:text-white transition ease-in-out duration-150 cursor-pointer">
-                  <div className="py-2 px-4 flex justify-center">
-                    <div className="-m-3 p-3 flex items-center space-x-3 rounded-md">
-                      <svg
-                        className="flex-shrink-0 h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
-                        />
-                      </svg>
-                      <div
-                        id="copy-git"
-                        className="text-base leading-6 font-medium"
-                      >
-                        Copy clone link
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CopyToClipboard>
-              <a
-                onClick={() => {
-                  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                  // @ts-ignore
-                  document.getElementById("download-git").innerHTML =
-                    "Download will start shortly!";
-                  Router.push(linkUrl + "/archive/master.zip");
-                  setTimeout(() => {
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore
-                    document.getElementById("download-git").innerHTML =
-                      "Download Project";
-                  }, 1000);
-                }}
-                download
-              >
-                <div className="shadow-sm rounded-b-lg border overflow-hidden bg-white text-black hover:bg-black hover:text-white active:bg-gray-600 active:text-white transition ease-in-out duration-150 cursor-pointer">
-                  <div className="py-2 px-4 flex justify-center">
-                    <div className="-m-3 p-3 flex items-center space-x-3 rounded-md">
-                      <svg
-                        className="flex-shrink-0 h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                        />
-                      </svg>
-                      <div
-                        id="download-git"
-                        className="text-base leading-6 font-medium"
-                      >
-                        Download Project
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
         <Footer simple />
@@ -402,9 +307,9 @@ function Breadcrumbs({
 }) {
   const segments = path.split("/").splice(1);
   return (
-    <p className="text-black pt-2 pb-4">
+    <p className="text-white pt-2 pb-4">
       <Link href="/">
-        <a className="link">westhub</a>
+        <a className="link">genemator.uz</a>
       </Link>{" "}
       /{" "}
       {!isStd && (
@@ -468,7 +373,7 @@ function VersionSelector({
           <div className="max-w-xs rounded-md shadow-sm">
             <select
               id="version"
-              className="block bg-white text-black form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+              className="block bg-transparent text-white form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
               value={selectedVersion}
               onChange={({ target: { value: newVersion } }) =>
                 onChange(newVersion)
@@ -508,7 +413,7 @@ function DirectoryListing(props: {
     <div className="flex flex-col pt-4">
       <div className="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div className="inline-block min-w-full shadow-sm rounded-lg border overflow-hidden">
-          <div className="bg-white border-b py-2 px-4 flex justify-between">
+          <div className="bg-transparent border-b py-2 px-4 flex justify-between">
             <div className="flex items-center">
               <svg
                 fill="currentColor"
@@ -527,7 +432,7 @@ function DirectoryListing(props: {
           </div>
           <div>
             <table className="min-w-full table-fixed">
-              <tbody className="bg-white">
+              <tbody className="bg-transparent">
                 {props.dirEntries
                   .sort((a, b) => a.type.localeCompare(b.type))
                   .map((entry, i) => (
@@ -541,7 +446,7 @@ function DirectoryListing(props: {
                       <tr
                         tabIndex={0}
                         role="button"
-                        className={`table-row text-black hover:text-white hover:bg-black cursor-pointer${
+                        className={`table-row text-white hover:text-black hover:bg-white cursor-pointer${
                           i !== props.dirEntries.length - 1
                             ? " border-b border-gray-200"
                             : ""

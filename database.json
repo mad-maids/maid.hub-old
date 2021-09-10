@@ -1,26 +1,122 @@
 {
-  "Computer Science Fundamentals": {
+  "asciinator": {
     "type": "github",
-    "owner": "00010023",
-    "repo": "csf",
-    "desc": "Computer Science Fundamentals classes codes where I code with Olga Yugay in Python"
+    "owner": "genemators",
+    "repo": "asciinator",
+    "desc": "The userbot telegram client created by Genemator in order to manage messages"
   },
-  "Computer Science Fundamentals (Coursework)": {
+  "betacraft": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "betacraft",
+    "desc": "The minecraft server manager written in Python3"
+  },
+  "betalander": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "betalander",
+    "desc": "The minecraft server manager written in TypeScript & Denoland"
+  },
+  "bot": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "bot",
+    "desc": "Genemator's Telegram Bot helper assistant"
+  },
+  "bot.ts": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "bot.ts",
+    "desc": "Genemator's Telegram Bot helper assistant rewritten on TypeScript and Serverless Vercel"
+  },
+  "bsba": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "bsba",
+    "desc": "The main homepage website of BSBA team"
+  },
+  "deno": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "deno",
+    "desc": "The deno land project ported to uzbek community"
+  },
+  "dot": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "dot",
+    "desc": "The dotenv files and environment files!"
+  },
+  "future.development": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "future-development",
+    "desc": "The website of Future Development™"
+  },
+  "genemators": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "genemators",
+    "desc": "Genemator's Portfolio website built with Next.js + Preact.js"
+  },
+  "genoxs": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "genoxs",
+    "desc": "The Python based Telegram bot that can serve as cloud server and manager"
+  },
+  "goodbye.world": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "goodbye.world",
+    "desc": "The last program that every programmer must write!"
+  },
+  "netlenister": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "netlenister",
+    "desc": "Netlenister is a template of serverless telegram bot with serverless database created by Genemator Sakhib."
+  },
+  "nexter": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "nexter",
+    "desc": "Template startup Next.js app with TS support!"
+  },
+  "oss": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "oss",
+    "desc": "OSS Linux for ready solutions"
+  },
+  "osswsl": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "osswsl",
+    "desc": "[ALPHA] OSSWSL based WSL2 distribution. Added systemd support hacks"
+  },
+  "serverland": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "serverland",
+    "desc": "The Server Manager for my own database"
+  },
+  "stream": {
+    "type": "github",
+    "owner": "genemators",
+    "repo": "stream",
+    "desc": "Steam Design files that's used as overlays for streamlabs or obs studio"
+  },
+  "testorex": {
     "type": "github",
     "owner": "genemators",
     "repo": "testorex",
-    "desc": "Computer Science Fundamentals classes coursework written in Python"
+    "desc": "The course work linted for showcase"
   },
-  "Fundamentals of Programming": {
+  "westhub": {
     "type": "github",
-    "owner": "00010023",
-    "repo": "fop",
-    "desc": "FunPro course module homeworks"
-  },
-  "Web Technology": {
-    "type": "github",
-    "owner": "00010023",
-    "repo": "wt",
-    "desc": "Web Technology where Bunyod aka teaches how to create websites!"
+    "owner": "genemators",
+    "repo": "westhub",
+    "desc": "The git management system for students of Westminster International University in Tashkent"
   }
 }

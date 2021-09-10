@@ -1,11 +1,15 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { useRouter } from "next/router";
 import React from "react";
 import Link from "next/link";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import Router from "next/router";
 
-const Notification = ({ news }: { news: string }) => {
+const Notification = ({ news }: { news: string }): React.ReactElement => {
   const path = useRouter().pathname;
 
   const NewsPanel = (news: string) => {
@@ -16,15 +20,15 @@ const Notification = ({ news }: { news: string }) => {
             <div className="pr-16 sm:text-center sm:px-16">
               <p className="font-medium text-black">
                 <span>
-                  <span className="font-bold">News:</span> {news}
+                  <span className="font-bold select-none">News: </span>
+                  {news}
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
-                  <a
-                    href="https://t.me/s/SeventyPlusBIS"
-                    className="text-black underline"
-                  >
-                    &rarr;
-                  </a>
+                  <Link href="/quotes">
+                    <a className="text-black underline select-none">
+                      Read my blog &rarr;
+                    </a>
+                  </Link>
                 </span>
               </p>
             </div>

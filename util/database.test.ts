@@ -1,12 +1,14 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import db from "../database.json";
-import { GithubDatabaseEntry } from "./github";
+import { GithubDatabaseEntry } from "./registries/github";
+import { NPMDatabaseEntry } from "./registries/npm";
+import { URLDatabaseEntry } from "./registries/url";
 
 /* eslint-env jest */
 
 const DATABASE: {
-  [name: string]: GithubDatabaseEntry;
+  [name: string]: GithubDatabaseEntry & NPMDatabaseEntry & URLDatabaseEntry;
 } = db as any;
 
 test("each database entry should have a description", () => {
@@ -37,8 +39,10 @@ test("a database entry of type github should have a owner and repo", () => {
 test("a database entry should never have a path ending with /", () => {
   for (const key in DATABASE) {
     const entry = DATABASE[key];
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     if (entry.path) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       expect(entry.path.endsWith("/")).toBeFalsy();
     }
