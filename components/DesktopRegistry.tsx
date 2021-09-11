@@ -1,7 +1,7 @@
 /* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React, { useMemo, useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import { parseNameVersion, isReadme, findEntry } from "../util/registry_utils";
@@ -304,9 +304,9 @@ function Breadcrumbs({
   const segments = path.split("/").splice(1);
   return (
     <p className="text-white pt-2 pb-4">
-      <Link href="/xd">
-        <a className="link border rounded-md p-1">&lt;-</a>
-      </Link>{" "}
+      <a onClick={() => Router.back()} className="link border rounded-md p-1">
+        &lt;-
+      </a>{" "}
       /{" "}
       {!isStd && (
         <>
