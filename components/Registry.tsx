@@ -373,7 +373,7 @@ function VersionSelector({
           <div className="max-w-xs rounded-md shadow-sm">
             <select
               id="version"
-              className="block bg-transparent text-white form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+              className="block bg-black text-white form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
               value={selectedVersion}
               onChange={({ target: { value: newVersion } }) =>
                 onChange(newVersion)
@@ -413,7 +413,7 @@ function DirectoryListing(props: {
     <div className="flex flex-col pt-4">
       <div className="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div className="inline-block min-w-full shadow-sm rounded-lg border overflow-hidden">
-          <div className="bg-transparent border-b py-2 px-4 flex justify-between">
+          <div className="bg-black border-b py-2 px-4 flex justify-between">
             <div className="flex items-center">
               <svg
                 fill="currentColor"
@@ -432,7 +432,7 @@ function DirectoryListing(props: {
           </div>
           <div>
             <table className="min-w-full table-fixed">
-              <tbody className="bg-transparent">
+              <tbody className="bg-black">
                 {props.dirEntries
                   .sort((a, b) => a.type.localeCompare(b.type))
                   .map((entry, i) => (

@@ -62,7 +62,7 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
               </label>
               <input
                 id="query"
-                className="text-white bg-transparent block w-full px-4 py-2 leading-normal border rounded-lg outline-none shadow hover:shadow-sm focus:shadow-sm appearance-none focus:border-gray-300 hover:border-gray-300 mt-1"
+                className="text-white bg-black block w-full px-4 py-2 leading-normal border rounded-lg outline-none shadow hover:shadow-sm focus:shadow-sm appearance-none focus:border-gray-300 hover:border-gray-300 mt-1"
                 type="text"
                 placeholder="Search..."
                 value={query}
@@ -76,7 +76,7 @@ const ThirdPartyRegistryList = (): React.ReactElement => {
                 Project doesn't exist or not found!
               </div>
             ) : (
-              <div className="bg-transparent sm:shadow border overflow-hidden sm:rounded-md mt-4">
+              <div className="bg-black sm:shadow border overflow-hidden sm:rounded-md mt-4">
                 <ul>
                   {list.map((name, i) => {
                     const link = `/x/${name}`;
