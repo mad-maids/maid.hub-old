@@ -304,7 +304,7 @@ function Breadcrumbs({
   const segments = path.split("/").splice(1);
   return (
     <p className="text-white pt-2 pb-4">
-      <a onClick={() => Router.back()} className="link border rounded-md p-1">
+      <a onClick={() => Router.back()} className="link border rounded-md p-1 cursor-pointer">
         &lt;-
       </a>{" "}
       /{" "}
