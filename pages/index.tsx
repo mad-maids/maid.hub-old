@@ -17,7 +17,7 @@ export default function Home(): React.ReactElement {
         <meta property="og:title" content="Welcome to Mad Maid's Hub" />
         <meta
           property="og:description"
-          content="Hi, I'm Geno Ferollo a.k.a Genemator. My website serves as a sources of information about my studies & works. Glad that you're interested! ;)"
+          content="Welcome to our Hub System Management!"
         />
       </Head>
       <Header subtitle="Home" />
