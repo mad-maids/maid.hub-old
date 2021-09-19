@@ -27,12 +27,12 @@ export class GithubEntry implements Entry {
 
   getSourceURL(path: string, version?: string): string {
     return `https://raw.githubusercontent.com/${this.owner}/${this.repo}/${
-      version ?? this.defaultVersion ?? "master"
+      version ?? this.defaultVersion ?? "main"
     }${this.path ?? ""}${path}`;
   }
   getRepositoryURL(path: string, version?: string): string {
     return `https://github.com/${this.owner}/${this.repo}/tree/${
-      version ?? this.defaultVersion ?? "master"
+      version ?? this.defaultVersion ?? "main"
     }${this.path ?? ""}${path}`;
   }
   async getDirectoryListing(
@@ -43,7 +43,7 @@ export class GithubEntry implements Entry {
       const url = `https://api.github.com/repos/${this.owner}/${
         this.repo
       }/contents${this.path ?? ""}${path}?ref=${
-        version ?? this.defaultVersion ?? "master"
+        version ?? this.defaultVersion ?? "main"
       }`;
       const res = await fetch(url, {
         headers: {
@@ -97,6 +97,6 @@ export class GithubEntry implements Entry {
     return tags ?? null;
   }
   getDefaultVersion(): string {
-    return this.defaultVersion ?? "master";
+    return this.defaultVersion ?? "main";
   }
 }
