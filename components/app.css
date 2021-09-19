@@ -9,18 +9,10 @@
   src: url("https://hub.maid.uz/fonts/FetteHaenelFraktur.ttf");
 }
 
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("https://hub.maid.uz/fonts/JetBrains.woff2") format("woff2"),
-    url("https://hub.maid.uz/fonts/JetBrains.woff") format("woff"),
-    url("https://hub.maid.uz/fonts/JetBrains.ttf") format("truetype");
-}
-
 html {
   scroll-behavior: smooth;
   overflow: scroll;
   overflow-x: hidden;
-  font-family: "JetBrains Mono", monospace;
 }
 
 :root {

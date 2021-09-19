@@ -40,14 +40,14 @@ export default function Home(): React.ReactElement {
                 {"LMS"}
               </div>
             </Link>
-            <Link href={"/t"} as="/wtf">
+            <Link href={"/posts"} as="/wtf">
               <div className="bg-white text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
                 {"Posts"}
               </div>
             </Link>
             <Link href={"/t"} as="/wtf">
               <div className="bg-white text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
-                {"Posts"}
+                {"Timetable"}
               </div>
             </Link>
           </div>
