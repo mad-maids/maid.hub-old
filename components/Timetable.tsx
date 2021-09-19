@@ -3,7 +3,25 @@ import { inspect } from "util";
 const Timetable = ({ table, today }: { table: any; today: any }) => {
   const date = new Date();
   if (table.length === 0) {
-    return <div>Yahoo!</div>;
+    return (
+      <div>
+      <div className="rounded-md bg-green-200 border border-green-400 p-4 my-4">
+        <div className="flex">
+          <div className="flex-shrink-0">
+            🎉
+          </div>
+          <div className="ml-3">
+            <h3 className="text-sm leading-5 font-medium text-green-800">
+              You don't have any lesson this day!
+            </h3>
+            <div className="mt-2 text-sm leading-5 text-green-700">
+              Feel free to get some chill and relax...
+            </div>
+          </div>
+        </div>{" "}
+      </div>
+      </div>
+    )
   } else {
     return (
       <div className="flex flex-col">
