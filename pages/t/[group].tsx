@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
+import dateToString from "../../util/dateToString"
 import GroupSelector from "../../components/GroupSelector";
 import DaySelector from "../../components/DaySelector";
 import Timetable from "../../components/Timetable";
@@ -36,6 +37,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
   const [group, setGroup] = useState<number>(0);
   const [day, setDay] = useState<string | number>();
   const [table, setTable] = useState<any>();
+  const [stringDate, setStringDate] = useState<string>();
 
   const today = new Date().getDay().toString();
 
@@ -47,6 +49,8 @@ const TimetablePage = (props: Props): React.ReactElement => {
     if (!day) {
       setDay(today);
     }
+
+    setStringDate(dateToString(day));
 
     // @ts-ignore
     setTable(props.tables[group].table[day]);
@@ -67,7 +71,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
       <Header subtitle={"Timetable " + props.group} />
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 pt-8 mb-16">
         <Link href="/t">
-          <a className="link">&lt;- Back to overview</a>
+          <a className="link border rounded-md p-2 ml-2">&lt;- Back to overview</a>
         </Link>
         <div className="mt-2 grid gap-2 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
           <GroupSelector action={group} setAction={setGroup} />
@@ -75,6 +79,10 @@ const TimetablePage = (props: Props): React.ReactElement => {
         </div>
       </div>
       <div className="mx-4 lg:mx-32 mb-12">
+        <div className="my-2 text-white text-center">
+          Showing timetable for {props.group}
+          {group + 1} on {stringDate}
+        </div>
         {(() => {
           if (!table) {
             return <div>Table is loading</div>;
