@@ -1,8 +1,14 @@
 {
-  "All In One": {
+  "Database Systems Development": {
     "type": "github",
-    "owner": "wiut-bis",
-    "repo": "expresso",
-    "desc": "All in one materials repo by the WIUT BIS devs"
+    "owner": "mad-maids",
+    "repo": "module.dsd",
+    "desc": "The module Database Systems Development"
+  },
+  "Object Oriented Programming": {
+    "type": "github",
+    "owner": "mad-maids",
+    "repo": "module.oop",
+    "desc": "The module Object Oriented Programming"
   }
 }
