@@ -37,15 +37,15 @@ const DaySelector = ({
 
   const prev = (old: string) => {
     if (parseInt(old) > 1) {
-      setAction((parseInt(old) - 1).toString())
+      setAction((parseInt(old) - 1).toString());
     }
-  }
+  };
 
   const next = (old: string) => {
     if (parseInt(old) < 6) {
-      setAction((parseInt(old) + 1).toString())
+      setAction((parseInt(old) + 1).toString());
     }
-  }
+  };
 
   return (
     <div className="px-1 py-3 items-center justify-between sm:px-2 text-center">

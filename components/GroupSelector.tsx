@@ -37,20 +37,20 @@ const GroupSelector = ({
 
   const prev = (old: number) => {
     if (old > 0) {
-      setAction(old - 1)
+      setAction(old - 1);
     } else {
-      console.log('exceeded')
+      console.log("exceeded");
     }
-  }
+  };
 
   const next = (old: number) => {
     if (old < 5) {
-      console.log(old + 1)
-      setAction(old + 1)
+      console.log(old + 1);
+      setAction(old + 1);
     } else {
-      console.log('exceeded')
+      console.log("exceeded");
     }
-  }
+  };
 
   return (
     <div className="px-1 py-3 items-center justify-between sm:px-2 text-center">

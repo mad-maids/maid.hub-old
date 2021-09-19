@@ -3,9 +3,7 @@ import { inspect } from "util";
 const Timetable = ({ table, today }: { table: any; today: any }) => {
   const date = new Date();
   if (table.length === 0) {
-    return (
-      <div>Yahoo!</div>
-    )
+    return <div>Yahoo!</div>;
   } else {
     return (
       <div className="flex flex-col">
@@ -14,72 +12,106 @@ const Timetable = ({ table, today }: { table: any; today: any }) => {
             <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
-                <tr>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Time
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Module
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Type
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                    Location
-                  </th>
-                </tr>
+                  <tr>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Time
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Module
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Type
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Location
+                    </th>
+                  </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                {table.map((subject: any) => {
-                  if (date.getDay() == today) {
-                    if (
-                      date.getHours().toString() == subject.start ||
-                      date.getHours().toString() == subject.start + 1
-                    ) {
-                      return (
-                        <tr key={subject.name}>
-                          <td className="bg-blue-100 px-6 py-4 whitespace-nowrap">
-                            <div className="flex items-center">
-                              <div className="h-11 w-12 text-center justify-center items-center border rounded-md">
-                                <div className="text-sm text-gray-500">
-                                  {subject.start}:00
-                                </div>
-                                <div className="text-sm text-gray-500">
-                                  {subject.start + subject.length}:00
+                  {table.map((subject: any) => {
+                    if (date.getDay() == today) {
+                      if (
+                        date.getHours().toString() == subject.start ||
+                        date.getHours().toString() == subject.start + 1
+                      ) {
+                        return (
+                          <tr key={subject.name}>
+                            <td className="bg-blue-100 px-6 py-4 whitespace-nowrap">
+                              <div className="flex items-center">
+                                <div className="h-11 w-12 text-center justify-center items-center border rounded-md">
+                                  <div className="text-sm text-gray-500">
+                                    {subject.start}:00
+                                  </div>
+                                  <div className="text-sm text-gray-500">
+                                    {subject.start + subject.length}:00
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </td>
-                          <td className="bg-blue-100 px-6 py-4 whitespace-nowrap">
-                            <div className="text-sm text-gray-900">
-                              {subject.name}
-                            </div>
-                            <div className="text-sm text-gray-500">
-                              {subject.tutor}
-                            </div>
-                          </td>
-                          <td className="bg-blue-100 px-6 py-4 whitespace-nowrap">
-                            <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center">
-                              {subject.type}
-                            </span>
-                          </td>
-                          <td className="bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {subject.location}
-                          </td>
-                        </tr>
-                      );
+                            </td>
+                            <td className="bg-blue-100 px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm text-gray-900">
+                                {subject.name}
+                              </div>
+                              <div className="text-sm text-gray-500">
+                                {subject.tutor}
+                              </div>
+                            </td>
+                            <td className="bg-blue-100 px-6 py-4 whitespace-nowrap">
+                              <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center">
+                                {subject.type}
+                              </span>
+                            </td>
+                            <td className="bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                              {subject.location}
+                            </td>
+                          </tr>
+                        );
+                      } else {
+                        return (
+                          <tr key={subject.name}>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="flex items-center">
+                                <div className="h-11 w-12 text-center justify-center items-center border rounded-md">
+                                  <div className="text-sm text-gray-500">
+                                    {subject.start}:00
+                                  </div>
+                                  <div className="text-sm text-gray-500">
+                                    {subject.start + subject.length}:00
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm text-gray-900">
+                                {subject.name}
+                              </div>
+                              <div className="text-sm text-gray-500">
+                                {subject.tutor}
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center">
+                                {subject.type}
+                              </span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                              {subject.location}
+                            </td>
+                          </tr>
+                        );
+                      }
                     } else {
                       return (
                         <tr key={subject.name}>
@@ -104,7 +136,13 @@ const Timetable = ({ table, today }: { table: any; today: any }) => {
                             </div>
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
-                            <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center">
+                            <span
+                              className={
+                                subject.type === "online"
+                                  ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-300 text-red-900 text-center"
+                                  : "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center"
+                              }
+                            >
                               {subject.type}
                             </span>
                           </td>
@@ -114,47 +152,7 @@ const Timetable = ({ table, today }: { table: any; today: any }) => {
                         </tr>
                       );
                     }
-                  } else {
-                    return (
-                      <tr key={subject.name}>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="flex items-center">
-                            <div className="h-11 w-12 text-center justify-center items-center border rounded-md">
-                              <div className="text-sm text-gray-500">
-                                {subject.start}:00
-                              </div>
-                              <div className="text-sm text-gray-500">
-                                {subject.start + subject.length}:00
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-900">
-                            {subject.name}
-                          </div>
-                          <div className="text-sm text-gray-500">
-                            {subject.tutor}
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span
-                            className={
-                              subject.type === "online"
-                                ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-300 text-red-900 text-center"
-                                : "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center"
-                            }
-                          >
-                            {subject.type}
-                          </span>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {subject.location}
-                        </td>
-                      </tr>
-                    );
-                  }
-                })}
+                  })}
                 </tbody>
               </table>
             </div>
