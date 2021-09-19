@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 const GroupSelector = ({
@@ -35,6 +35,23 @@ const GroupSelector = ({
     },
   ];
 
+  const prev = (old: number) => {
+    if (old > 0) {
+      setAction(old - 1)
+    } else {
+      console.log('exceeded')
+    }
+  }
+
+  const next = (old: number) => {
+    if (old < 5) {
+      console.log(old + 1)
+      setAction(old + 1)
+    } else {
+      console.log('exceeded')
+    }
+  }
+
   return (
     <div className="px-1 py-3 items-center justify-between sm:px-2 text-center">
       <div className="items-center justify-center">
@@ -43,7 +60,7 @@ const GroupSelector = ({
           aria-label="Pagination"
         >
           <a
-            href="#"
+            onClick={() => prev(action)}
             className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
           >
             <span className="sr-only">Previous</span>
@@ -71,7 +88,7 @@ const GroupSelector = ({
             }
           })}
           <a
-            href="#"
+            onClick={() => next(action)}
             className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
           >
             <span className="sr-only">Next</span>

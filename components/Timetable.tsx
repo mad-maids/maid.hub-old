@@ -2,14 +2,18 @@ import { inspect } from "util";
 
 const Timetable = ({ table, today }: { table: any; today: any }) => {
   const date = new Date();
-  
-  return (
-    <div className="flex flex-col">
-      <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
+  if (table.length === 0) {
+    return (
+      <div>Yahoo!</div>
+    )
+  } else {
+    return (
+      <div className="flex flex-col">
+        <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
                 <tr>
                   <th
                     scope="col"
@@ -36,8 +40,8 @@ const Timetable = ({ table, today }: { table: any; today: any }) => {
                     Location
                   </th>
                 </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
                 {table.map((subject: any) => {
                   if (date.getDay() == today) {
                     if (
@@ -134,7 +138,13 @@ const Timetable = ({ table, today }: { table: any; today: any }) => {
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          <span className={ subject.type === "online" ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-300 text-red-900 text-center" : "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center"}>
+                          <span
+                            className={
+                              subject.type === "online"
+                                ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-300 text-red-900 text-center"
+                                : "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-900 text-center"
+                            }
+                          >
                             {subject.type}
                           </span>
                         </td>
@@ -145,13 +155,14 @@ const Timetable = ({ table, today }: { table: any; today: any }) => {
                     );
                   }
                 })}
-              </tbody>
-            </table>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Timetable;
