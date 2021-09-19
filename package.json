@@ -8,7 +8,7 @@
     "start": "next start",
     "test": "jest",
     "format": "yarn format:check --write",
-    "format:check": "prettier --check \"**/*.md\" \"*.js\" \"*.json\" \"{util,public,pages,components}/**/*.{js,ts,jsx,tsx}\" \"{util,public,pages,components}/*.{js,ts,jsx,tsx}\"",
+    "format:check": "prettier --check \"**/*.md\" \"*.js\" \"*.json\" \"{util,public,pages,components}/**/*.{js,ts,jsx,tsx,json}\" \"{util,public,pages,components}/*.{js,ts,jsx,tsx,json}\"",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx util/ pages/ components/"
   },
   "dependencies": {
@@ -32,6 +32,7 @@
     "typewriter-effect": "^2.17.0"
   },
   "devDependencies": {
+    "@heroicons/react": "^1.0.4",
     "@types/dompurify": "^2.0.4",
     "@types/jest": "^26.0.15",
     "@types/marked": "^1.1.0",

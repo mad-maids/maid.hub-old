@@ -1,13 +1,13 @@
 {
- "short_name": "Mad Maid's",
- "name": "Mad Maid's Hub",
- "lang": "en",
- "description": "Mad Maid's Intranet LMS Board replacement.",
- "start_url": "/",
- "background_color": "#000000",
- "theme_color": "#000000",
- "dir": "ltr",
- "display": "standalone",
- "orientation": "portrait",
- "prefer_related_applications": false
+  "short_name": "Mad Maid's",
+  "name": "Mad Maid's Hub",
+  "lang": "en",
+  "description": "Mad Maid's Intranet LMS Board replacement.",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "portrait",
+  "prefer_related_applications": false
 }
