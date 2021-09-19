@@ -66,9 +66,8 @@ const TimetablePage = (props: Props): React.ReactElement => {
           }
         />
       </Head>
-      <Header subtitle={"Timetable " + props.group} />
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 pt-8 mb-16">
-        <Link href="/t">
+        <Link href="/td">
           <a className="link border rounded-md p-2 ml-2">
             ← Back to overview
           </a>
@@ -91,7 +90,6 @@ const TimetablePage = (props: Props): React.ReactElement => {
           }
         })()}
       </div>
-      <Footer />
     </>
   );
 };

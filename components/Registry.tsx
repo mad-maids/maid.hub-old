@@ -312,7 +312,7 @@ function Breadcrumbs({
         onClick={() => Router.back()}
         className="link border rounded-md p-1 cursor-pointer"
       >
-        &lt;-
+        ←
       </a>{" "}
       /{" "}
       {!isStd && (
