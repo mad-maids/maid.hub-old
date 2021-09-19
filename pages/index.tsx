@@ -35,23 +35,23 @@ export default function Home(): React.ReactElement {
             </div>
           </div>
           <div className="max-w-screen-md mx-auto">
-          <div className="grid gap-2 grid-cols-3 col-gap-5 row-gap-12 mb-4 mt-4 justify-center mb-32">
-            <Link href={"/x"} as="/wtf">
-              <div className="bg-white p-3 text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
-                {"LMS"}
-              </div>
-            </Link>
-            <Link href={"/posts"} as="/wtf">
-              <div className="bg-white p-3 text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
-                {"Posts"}
-              </div>
-            </Link>
-            <Link href={"/t"} as="/wtf">
-              <div className="bg-white p-3 text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
-                {"Timetable"}
-              </div>
-            </Link>
-          </div>
+            <div className="grid gap-2 grid-cols-3 col-gap-5 row-gap-12 mb-4 mt-4 justify-center mb-32">
+              <Link href={"/x"} as="/wtf">
+                <div className="bg-white p-3 text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
+                  {"LMS"}
+                </div>
+              </Link>
+              <Link href={"/posts"} as="/wtf">
+                <div className="bg-white p-3 text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
+                  {"Posts"}
+                </div>
+              </Link>
+              <Link href={"/t"} as="/wtf">
+                <div className="bg-white p-3 text-black text-center xl:text-3xl lg:text-2xl text-1xl border rounded-md hover:text-white hover:bg-transparent cursor-pointer m-4 p-2">
+                  {"Timetable"}
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
