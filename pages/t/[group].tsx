@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
-import dateToString from "../../util/dateToString"
+import dateToString from "../../util/dateToString";
 import GroupSelector from "../../components/GroupSelector";
 import DaySelector from "../../components/DaySelector";
 import Timetable from "../../components/Timetable";
@@ -13,8 +13,6 @@ import { GetStaticProps, GetStaticPaths } from "next/types";
 import { promises, promises as fs } from "fs";
 import { join } from "path";
 import Link from "next/link";
-import { number } from "prop-types";
-import { set } from "nprogress";
 
 interface Props {
   group: string;
@@ -71,7 +69,9 @@ const TimetablePage = (props: Props): React.ReactElement => {
       <Header subtitle={"Timetable " + props.group} />
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 pt-8 mb-16">
         <Link href="/t">
-          <a className="link border rounded-md p-2 ml-2">&lt;- Back to overview</a>
+          <a className="link border rounded-md p-2 ml-2">
+            &lt;- Back to overview
+          </a>
         </Link>
         <div className="mt-2 grid gap-2 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
           <GroupSelector action={group} setAction={setGroup} />
