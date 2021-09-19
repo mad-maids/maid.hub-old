@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
+import { validateCLIOptions } from "jest-validate";
 
 const DaySelector = ({
   action,
@@ -62,7 +63,18 @@ const DaySelector = ({
             <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
           </a>
 
+          {(() => {
+            if (parseInt(action) > 2) {
+              return (
+                <span className="relative inline-flex items-center px-4 py-2 border border-white bg-black text-sm font-medium text-white">
+              ...
+            </span>
+              )
+            }
+          })()}
+
           {weekdays.map((day) => {
+            if (parseInt(day.value) === (parseInt(action) - 1) || day.value === action || parseInt(day.value) === (parseInt(action) + 1)) {
             if (day.value === action) {
               return (
                 <a className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
@@ -80,8 +92,19 @@ const DaySelector = ({
                   {day.name}
                 </a>
               );
-            }
+            }}
           })}
+
+          {(() => {
+            if (parseInt(action) < 5) {
+              return (
+                <span className="relative inline-flex items-center px-4 py-2 border border-white bg-black text-sm font-medium text-white">
+              ...
+            </span>
+              )
+            }
+          })()}
+
           <a
             onClick={() => next(action)}
             className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-white bg-black text-sm font-medium text-white hover:bg-white hover:text-black"
