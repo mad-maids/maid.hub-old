@@ -68,9 +68,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
       </Head>
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 pt-8 mb-16">
         <Link href="/td">
-          <a className="link border rounded-md p-2 ml-2">
-            ← Back to overview
-          </a>
+          <a className="link border rounded-md p-2 ml-2">← Back to overview</a>
         </Link>
         <div className="mt-2 grid gap-2 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
           <GroupSelector action={group} setAction={setGroup} />
