@@ -56,7 +56,7 @@ const DaySelector = ({
         >
           <a
             onClick={() => prev(action)}
-            className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+            className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-white bg-black text-sm font-medium text-white hover:bg-white hover:text-black"
           >
             <span className="sr-only">Previous</span>
             <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
@@ -65,7 +65,7 @@ const DaySelector = ({
           {weekdays.map((day) => {
             if (day.value === action) {
               return (
-                <a className="cursor-pointer z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                <a className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
                   {day.name}
                 </a>
               );
@@ -75,7 +75,7 @@ const DaySelector = ({
                   onClick={() => {
                     setAction(day.value);
                   }}
-                  className="cursor-pointer bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+                  className="cursor-pointer bg-black border-white text-white hover:bg-white hover:text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                 >
                   {day.name}
                 </a>
@@ -84,7 +84,7 @@ const DaySelector = ({
           })}
           <a
             onClick={() => next(action)}
-            className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+            className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-white bg-black text-sm font-medium text-white hover:bg-white hover:text-black"
           >
             <span className="sr-only">Next</span>
             <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
