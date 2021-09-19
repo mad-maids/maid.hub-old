@@ -1,0 +1,28 @@
+name: Timetable CI
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: mad-maids/maid.table
+          path: new-timetable
+      - run: |
+          rm -rf public/timetable/5BIS
+          mv new-timetable/5BIS public/timetable/5BIS
+          rm -rf public/timetable/4BIS
+          mv new-timetable/4BIS public/timetable/4BIS
+          rm -rf new-timetable
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          [[ -z $(git status -uno --porcelain) ]] && echo "this branch is clean, no need to push..." && exit 0;
+          git commit -m "Updated timetable"
+          git push
