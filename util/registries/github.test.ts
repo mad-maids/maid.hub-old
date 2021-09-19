@@ -21,7 +21,7 @@ test("source url", () => {
 
 test("source url with default version", () => {
   expect(testEntry.getSourceURL("/index.js", undefined)).toEqual(
-    "https://raw.githubusercontent.com/octocat/test-repo1/master/index.js"
+    "https://raw.githubusercontent.com/octocat/test-repo1/main/index.js"
   );
 });
 
@@ -59,7 +59,7 @@ test("repo url", () => {
 
 test("repo url with default version", () => {
   expect(testEntry.getRepositoryURL("/index.js", undefined)).toEqual(
-    "https://github.com/octocat/test-repo1/tree/master/index.js"
+    "https://github.com/octocat/test-repo1/tree/main/index.js"
   );
 });
 
