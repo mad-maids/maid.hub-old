@@ -2,6 +2,7 @@ import { inspect } from "util";
 
 const Timetable = ({ table, today }: { table: any; today: any }) => {
   const date = new Date();
+  
   return (
     <div className="flex flex-col">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
