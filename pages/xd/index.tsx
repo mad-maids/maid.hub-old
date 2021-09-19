@@ -3,7 +3,6 @@
 import React, { useMemo } from "react";
 import Link from "next/link";
 import { entries } from "../../util/registry_utils";
-import InlineCode from "../../components/InlineCode";
 
 import Head from "next/head";
 

@@ -7,8 +7,6 @@ import dateToString from "../../util/dateToString";
 import GroupSelector from "../../components/GroupSelector";
 import DaySelector from "../../components/DaySelector";
 import Timetable from "../../components/Timetable";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import { GetStaticProps, GetStaticPaths } from "next/types";
 import { promises, promises as fs } from "fs";
 import { join } from "path";
@@ -50,7 +48,6 @@ const TimetablePage = (props: Props): React.ReactElement => {
 
     setStringDate(dateToString(day));
 
-    // @ts-ignore
     setTable(props.tables[group].table[day]);
   });
 
@@ -100,7 +97,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-// @ts-ignore
 export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const group = ctx.params!.group;
   const dir = await promises.readdir("./public/timetable/" + group);

@@ -1,6 +1,4 @@
-import { number } from "prop-types";
-
-export default (weekday: string | number | undefined) => {
+export default (weekday: string | number | undefined): string => {
   switch (weekday) {
     case "0":
     case 0:

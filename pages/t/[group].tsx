@@ -50,7 +50,6 @@ const TimetablePage = (props: Props): React.ReactElement => {
 
     setStringDate(dateToString(day));
 
-    // @ts-ignore
     setTable(props.tables[group].table[day]);
   });
 
@@ -102,7 +101,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-// @ts-ignore
 export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const group = ctx.params!.group;
   const dir = await promises.readdir("./public/timetable/" + group);

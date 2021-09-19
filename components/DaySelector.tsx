@@ -1,6 +1,5 @@
 import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import { validateCLIOptions } from "jest-validate";
 
 const DaySelector = ({
   action,

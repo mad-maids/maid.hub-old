@@ -54,7 +54,7 @@ const Header = ({
   };
 
   return (
-    <div className="relative bg-black">
+    <div className="relative bg-black z-10">
       <div className="mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
@@ -102,6 +102,11 @@ const Header = ({
             <Link href="/x">
               <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
                 LMS
+              </a>
+            </Link>
+            <Link href="/t">
+              <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
+                Timetable
               </a>
             </Link>
           </nav>
@@ -219,6 +224,26 @@ const Header = ({
                         </svg>
                         <div className="text-base leading-6 font-medium">
                           LMS
+                        </div>
+                      </a>
+                    </Link>
+                    <Link href="/t">
+                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
+                        <svg
+                          className="flex-shrink-0 h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                          />
+                        </svg>
+                        <div className="text-base leading-6 font-medium">
+                          Timetable
                         </div>
                       </a>
                     </Link>

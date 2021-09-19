@@ -1,7 +1,12 @@
-import { inspect } from "util";
 import React from "react";
 
-const Timetable = ({ table, today }: { table: any; today: any }) => {
+const Timetable = ({
+  table,
+  today,
+}: {
+  table: any;
+  today: any;
+}): React.ReactElement => {
   const date = new Date();
   if (table.length === 0) {
     return (

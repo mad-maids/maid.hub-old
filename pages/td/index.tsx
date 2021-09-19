@@ -6,9 +6,6 @@ import { GetStaticProps } from "next/types";
 
 import { promises } from "fs";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import { join } from "path";
 import Link from "next/link";
 
 interface Props {
@@ -31,8 +28,11 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
           <div className="mt-6 grid gap-16 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12 mb-32">
             {props.dirs.map((group) => {
               return (
-                <Link href={`/td/${group}`}>
-                  <a className="border p-6 m-1 text-center rounded-md bg-black hover:bg-white hover:text-black">
+                <Link href={`/td/${group}`} key={group}>
+                  <a
+                    key={group}
+                    className="border p-6 m-1 text-center rounded-md bg-black hover:bg-white hover:text-black"
+                  >
                     {group}
                   </a>
                 </Link>
