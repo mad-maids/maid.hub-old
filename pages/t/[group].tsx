@@ -13,7 +13,6 @@ import { GetStaticProps, GetStaticPaths } from "next/types";
 import { promises, promises as fs } from "fs";
 import { join } from "path";
 import Link from "next/link";
-import { number } from "prop-types";
 
 interface Props {
   group: string;
@@ -101,7 +100,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const group = ctx.params!.group;
   const dir = await promises.readdir("./public/timetable/" + group);
   const tableIds = dir.filter((name) => name.endsWith(".json"));
