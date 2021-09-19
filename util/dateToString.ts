@@ -23,7 +23,10 @@ export default (weekday: string | number | undefined) => {
     case "6":
     case 6:
       return "Saturday";
+    case "7":
+    case 7:
+      return "Sunday";
     default:
-      return "Some random day"
+      return "Some random day";
   }
-}
+};

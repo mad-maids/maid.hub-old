@@ -48,7 +48,7 @@ const DaySelector = ({
   };
 
   return (
-    <div className="px-1 py-3 items-center justify-between sm:px-2 text-center">
+    <div className="px-1 py-3 items-center justify-between sm:px-2 text-center select-none">
       <div className="items-center justify-center">
         <nav
           className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"

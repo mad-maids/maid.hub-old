@@ -79,7 +79,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
         </div>
       </div>
       <div className="mx-4 lg:mx-32 mb-12">
-        <div className="my-2 text-white text-center">
+        <div className="my-4 text-white text-center">
           Showing timetable for {props.group}
           {group + 1} on {stringDate}
         </div>
