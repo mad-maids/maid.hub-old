@@ -13,6 +13,7 @@ import { GetStaticProps, GetStaticPaths } from "next/types";
 import { promises, promises as fs } from "fs";
 import { join } from "path";
 import Link from "next/link";
+import { number } from "prop-types";
 
 interface Props {
   group: string;
@@ -32,12 +33,11 @@ interface Props {
 }
 
 const TimetablePage = (props: Props): React.ReactElement => {
+  const today = new Date().getDay().toString();
   const [group, setGroup] = useState<number>(0);
-  const [day, setDay] = useState<string | number>();
+  const [day, setDay] = useState<string>(today);
   const [table, setTable] = useState<any>();
   const [stringDate, setStringDate] = useState<string>();
-
-  const today = new Date().getDay().toString();
 
   useEffect(() => {
     if (!group) {
