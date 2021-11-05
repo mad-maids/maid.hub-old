@@ -9,8 +9,7 @@ module.exports = withPrefresh({
     const splitChunks = config.optimization && config.optimization.splitChunks;
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
-      const preactModules =
-        /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
+      const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
           test: preactModules,
