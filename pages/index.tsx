@@ -1,4 +1,3 @@
-/* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React from "react";
 import Head from "next/head";
@@ -25,7 +24,7 @@ export default function Home(): React.ReactElement {
       <div className="h-auto">
         <div className="h-auto">
           <div className="flex mt-48 mb-4 justify-center">
-            <div className="genemator-colorful font-bold px-3 text-white text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
+            <div className="maid-colorful font-bold px-3 text-white text-center xl:text-6xl lg:text-5xl text-4xl border-4 rounded-lg">
               Maid's Hub
             </div>
           </div>

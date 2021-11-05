@@ -1,4 +1,3 @@
-/* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore

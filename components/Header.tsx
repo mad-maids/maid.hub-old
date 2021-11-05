@@ -1,4 +1,3 @@
-/* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -60,7 +59,7 @@ const Header = ({
           <div className="lg:w-0 lg:flex-1">
             <Link href="/">
               <a className="flex items-center">
-                <div className="text-white px-2 genemator-title">
+                <div className="text-white px-2 maid-title">
                   Maid's {type ? type : "Hub"}
                 </div>
                 {subtitle && (
@@ -115,7 +114,7 @@ const Header = ({
               href="https://intranet.maid.uz/"
               target="_blank"
               rel="noreferrer"
-              className="whitespace-no-wrap genemator-title text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400"
+              className="whitespace-no-wrap maid-title text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400"
             >
               <svg
                 className="h-6 w-6"
@@ -149,7 +148,7 @@ const Header = ({
               <div className="pt-5 pb-6 px-5 space-y-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-white genemator-title">Mad Maid's</div>{" "}
+                    <div className="text-white maid-title">Mad Maid's</div>{" "}
                     {subtitle && (
                       <div className="text-white">
                         {">"} {subtitle}
@@ -270,7 +269,7 @@ const Header = ({
                     target="_blank"
                     rel="noreferrer"
                     href="https://intranet.maid.uz"
-                    className="w-full genemator-title flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-white bg-transparent hover:bg-white hover:text-black focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
+                    className="w-full maid-title flex items-center justify-center px-4 py-2 border border text-base leading-6 font-medium rounded-md text-white bg-transparent hover:bg-white hover:text-black focus:outline-none focus:border-white focus:shadow-outline-white active:bg-white transition ease-in-out duration-150"
                   >
                     Intranet
                   </a>

@@ -1,4 +1,3 @@
-/* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React, { useMemo, useState, useEffect } from "react";
 import Router, { useRouter } from "next/router";

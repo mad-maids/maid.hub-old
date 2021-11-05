@@ -1,4 +1,3 @@
-/* Copyright 2020 Genemator Sakhib. All rights reserved. MPL-2.0 license. */
 
 import React from "react";
 import Head from "next/head";
@@ -76,8 +75,8 @@ const NewsPostPage = (props: Props): React.ReactElement => {
         <div className="telegram-post mt-8">
           <Markdown
             source={props.markdown}
-            displayURL={`https://genemators.me/posts/${props.meta.id}`}
-            sourceURL={`https://genemators.me/posts/${props.meta.id}.md`}
+            displayURL={`https://maid.uz/posts/${props.meta.id}`}
+            sourceURL={`https://maid.uz/posts/${props.meta.id}.md`}
             baseURL={props.markdown}
           />
         </div>
