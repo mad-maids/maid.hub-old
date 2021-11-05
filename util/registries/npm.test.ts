@@ -1,4 +1,3 @@
-
 import { NPMEntry, NPMDatabaseEntry } from "./npm";
 import "isomorphic-unfetch";
 

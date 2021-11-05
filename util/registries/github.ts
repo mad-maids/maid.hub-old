@@ -1,4 +1,3 @@
-
 import { Entry, DirEntry, DatabaseEntry } from "../registries";
 
 export interface GithubDatabaseEntry extends DatabaseEntry {

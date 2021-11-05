@@ -1,4 +1,3 @@
-
 import React from "react";
 
 function InlineCode(props: { children: React.ReactNode }): React.ReactElement {

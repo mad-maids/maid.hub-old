@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import marked, { Renderer } from "marked";
@@ -65,7 +64,7 @@ function Markdown(props: MarkdownProps): React.ReactElement | null {
 
   try {
     marked.use({
-      renderer: ({
+      renderer: {
         heading(text: string, level: number) {
           const slug = slugify(text);
           return `
@@ -117,7 +116,7 @@ function Markdown(props: MarkdownProps): React.ReactElement | null {
         text(text) {
           return replaceEmojis(text);
         },
-      } as Partial<Renderer>) as any,
+      } as Partial<Renderer> as any,
     });
 
     const raw = marked(props.source, {

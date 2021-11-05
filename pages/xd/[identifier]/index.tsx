@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import DesktopRegistry from "../../../components/DesktopRegistry";

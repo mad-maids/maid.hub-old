@@ -1,4 +1,3 @@
-
 import emojis from "./emojis.json";
 
 export function replaceEmojis(src: string): string {

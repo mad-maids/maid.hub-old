@@ -1,4 +1,3 @@
-
 import DATABASE from "../database.json";
 import { GithubEntry, GithubDatabaseEntry } from "./registries/github";
 import { URLEntry, URLDatabaseEntry } from "./registries/url";

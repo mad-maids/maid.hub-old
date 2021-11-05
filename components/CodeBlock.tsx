@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import Router from "next/router";
 import Highlight, { Prism } from "prism-react-renderer";

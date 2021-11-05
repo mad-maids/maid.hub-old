@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState, useEffect } from "react";
 import Router, { useRouter } from "next/router";
 import Link from "next/link";
@@ -30,16 +29,14 @@ const Registry = (): React.ReactElement => {
     [name, version, path]
   );
   const entry = useMemo(() => findEntry(name), [name]);
-  const sourceURL = useMemo(() => entry?.getSourceURL(path, version), [
-    entry,
-    path,
-    version,
-  ]);
-  const repositoryURL = useMemo(() => entry?.getRepositoryURL(path, version), [
-    entry,
-    path,
-    version,
-  ]);
+  const sourceURL = useMemo(
+    () => entry?.getSourceURL(path, version),
+    [entry, path, version]
+  );
+  const repositoryURL = useMemo(
+    () => entry?.getRepositoryURL(path, version),
+    [entry, path, version]
+  );
   const defaultVersion = useMemo(() => entry?.getDefaultVersion(), [entry]);
 
   const [dirEntries, setDirEntries] = useState<

@@ -1,4 +1,3 @@
-
 import { URLEntry, URLDatabaseEntry } from "./url";
 
 /* eslint-env jest */

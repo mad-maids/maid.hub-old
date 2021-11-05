@@ -1,4 +1,3 @@
-
 import { GithubDatabaseEntry, GithubEntry } from "./github";
 import "isomorphic-unfetch";
 

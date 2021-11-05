@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Footer = (props: { simple?: boolean }): React.ReactElement => (

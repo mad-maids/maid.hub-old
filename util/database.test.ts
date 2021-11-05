@@ -1,4 +1,3 @@
-
 import db from "../database.json";
 import { GithubDatabaseEntry } from "./registries/github";
 import { NPMDatabaseEntry } from "./registries/npm";

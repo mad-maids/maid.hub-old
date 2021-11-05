@@ -1,4 +1,3 @@
-
 import { Entry, DatabaseEntry } from "../registries";
 
 export interface URLDatabaseEntry extends DatabaseEntry {

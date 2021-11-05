@@ -1,4 +1,3 @@
-
 import { Entry, DirEntry, DatabaseEntry } from "../registries";
 
 export interface NPMDatabaseEntry extends DatabaseEntry {
