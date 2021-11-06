@@ -56,10 +56,10 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
             <div className="bg-black sm:shadow border overflow-hidden sm:rounded-md mt-4">
               <ul>
                 {list.map((name, i) => {
-                  const link = `/t/${name}`;
+                  const link = `/td/${name}`;
                   return (
                     <li className={i !== 0 ? "border-t" : ""} key={i}>
-                      <Link href="/t/[group]" as={link}>
+                      <Link href="/td/[group]" as={link}>
                         <a className="block hover:bg-white hover:text-black focus:outline-none focus:bg-white transition duration-150 ease-in-out">
                           <div className="flex items-center px-4 sm:px-6 py-2">
                             <div className="min-w-0 flex-1 flex items-center">
