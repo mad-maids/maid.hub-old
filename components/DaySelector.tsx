@@ -43,11 +43,19 @@ const DaySelector = ({
     if (parseInt(old) > 1) {
       setAction((parseInt(old) - 1).toString());
     }
+
+    if (parseInt(old) === 1) {
+      setAction("7");
+    }
   };
 
   const next = (old: string) => {
-    if (parseInt(old) < 6) {
+    if (parseInt(old) < 7) {
       setAction((parseInt(old) + 1).toString());
+    }
+
+    if (parseInt(old) === 7) {
+      setAction("1");
     }
   };
 
