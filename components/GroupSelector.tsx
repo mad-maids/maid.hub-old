@@ -4,19 +4,16 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 const GroupSelector = ({
   action,
   setAction,
-  length
+  length,
 }: {
   action: any;
   setAction: any;
   length: number;
 }): React.ReactElement => {
-
-  const groups = Array.from(Array(length).keys()).map(i => ({
+  const groups = Array.from(Array(length).keys()).map((i) => ({
     name: (i + 1).toString(),
-    value: i
+    value: i,
   }));
-
-  console.log(groups)
 
   const prev = (old: number) => {
     if (old > 0) {
