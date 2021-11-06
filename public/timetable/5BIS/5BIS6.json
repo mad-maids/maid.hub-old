@@ -2,17 +2,9 @@
   "0": [],
   "1": [
     {
-      "name": "Introduction to Cryptocurrencies",
-      "tutor": "Qobiljon Yunusov",
-      "type": "workshop",
-      "start": 9.0,
-      "length": 2.0,
-      "location": "IB306"
-    },
-    {
       "name": "Fundametals of Programming",
-      "tutor": "Vasiliy Kuznetsov",
-      "type": "workshop",
+      "tutor": "Timur Martinez Mukimov",
+      "type": "seminar",
       "start": 9.0,
       "length": 2.0,
       "location": "New408 CL"
@@ -22,16 +14,16 @@
       "tutor": "Akmal Salikov",
       "type": "seminar",
       "start": 12.0,
-      "length": 2.0,
+      "length": 1.0,
       "location": "IB215 CL"
     },
     {
       "name": "Management Accounting",
       "tutor": "Feruza Yodgorova",
-      "type": "lecture",
+      "type": "online",
       "start": 13.0,
       "length": 1.0,
-      "location": "IB301"
+      "location": "IB313"
     },
     {
       "name": "Object Oriented Programming",
@@ -80,15 +72,23 @@
       "tutor": "Angelo Battaglia",
       "type": "seminar",
       "start": 15.0,
-      "length": 3.0,
-      "location": "ATB310A"
+      "length": 2.0,
+      "location": "ATB310 A"
+    },
+    {
+      "name": "Brand Journalism and Content Strategy",
+      "tutor": "Angelo Battaglia",
+      "type": "online",
+      "start": 17.0,
+      "length": 1.0,
+      "location": "ATB310 A"
     }
   ],
   "3": [
     {
       "name": "Web Technology",
       "tutor": "Bunyod Khoshimkhujaev",
-      "type": "workshop",
+      "type": "seminar",
       "start": 9.0,
       "length": 2.0,
       "location": "New408 CL"
@@ -104,29 +104,13 @@
     {
       "name": "Database Systems Development",
       "tutor": "Ito Wasito",
-      "type": "workshop",
+      "type": "seminar",
       "start": 13.0,
       "length": 2.0,
       "location": "New408 CL"
     }
   ],
   "4": [
-    {
-      "name": "Management Accounting",
-      "tutor": "Feruza Yodgorova",
-      "type": "seminar",
-      "start": 9.0,
-      "length": 2.0,
-      "location": "IB209 CL"
-    },
-    {
-      "name": "Network Operations",
-      "tutor": "Vasiliy Kuznetsov",
-      "type": "lecture",
-      "start": 9.0,
-      "length": 2.0,
-      "location": "New305 CL"
-    },
     {
       "name": "Computer Science Fundamentals",
       "tutor": "Olga Yugay",
@@ -154,17 +138,9 @@
   ],
   "5": [
     {
-      "name": "Introduction to Cryptocurrencies",
-      "tutor": "Qobiljon Yunusov",
-      "type": "wokrshop",
-      "start": 9.0,
-      "length": 2.0,
-      "location": "LRC13 Library Multimedia"
-    },
-    {
       "name": "Design Thinking for Learning",
       "tutor": "Ahmed Waqas",
-      "type": "wokrshop",
+      "type": "workshop",
       "start": 9.0,
       "length": 2.0,
       "location": "ATB212 CL"
@@ -180,7 +156,7 @@
     {
       "name": "Brand Journalism and Content Strategy",
       "tutor": "Sanemkhan Nurillaeva",
-      "type": "lecture",
+      "type": "online",
       "start": 13.0,
       "length": 1.0,
       "location": "Harvard306"

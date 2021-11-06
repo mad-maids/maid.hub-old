@@ -2,8 +2,8 @@
   "0": [],
   "1": [
     {
-      "name": "Fundamentals of Programming",
-      "tutor": "Anonymous",
+      "name": "Fundametals of Programming",
+      "tutor": "Timur Martinez Mukimov",
       "type": "seminar",
       "start": 11.0,
       "length": 2.0,
@@ -53,13 +53,13 @@
       "type": "seminar",
       "start": 15.0,
       "length": 2.0,
-      "location": "ATB310 B"
+      "location": "ATB310"
     }
   ],
   "5": [
     {
       "name": "Introduction to Management and Organisational Behaviour",
-      "tutor": "Sing-Jae Sin",
+      "tutor": "Sung-Jae Sin",
       "type": "seminar",
       "start": 11.0,
       "length": 2.0,

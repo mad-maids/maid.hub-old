@@ -14,7 +14,7 @@
     {
       "name": "Database Systems Development",
       "tutor": "Ito Wasito",
-      "type": "workshop",
+      "type": "seminar",
       "start": 11.0,
       "length": 2.0,
       "location": "New408 CL"
@@ -24,7 +24,7 @@
     {
       "name": "Mobile Application Development",
       "tutor": "Said Abduvaliev",
-      "type": "workshop",
+      "type": "lecture",
       "start": 11.0,
       "length": 2.0,
       "location": "New206 H"

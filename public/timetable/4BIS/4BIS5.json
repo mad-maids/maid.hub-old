@@ -2,15 +2,15 @@
   "0": [],
   "1": [
     {
-      "name": "Fundamentals of Programming",
-      "tutor": "Anonymous",
+      "name": "Fundametals of Programming",
+      "tutor": "Timur Martinez Mukimov",
       "type": "seminar",
       "start": 9.0,
       "length": 2.0,
       "location": "New408 CL"
     },
     {
-      "name": "Introduction to Management and Organisational Beheaviour",
+      "name": "Introduction to Management and Organisational Behaviour",
       "tutor": "Alisher Ismailov",
       "type": "online",
       "start": 15.0,
@@ -36,7 +36,7 @@
       "location": "Harvard306"
     },
     {
-      "name": "Introduction to Management and Organisational Beheaviour",
+      "name": "Introduction to Management and Organisational Behaviour",
       "tutor": "Sung-Jae Sin",
       "type": "seminar",
       "start": 16.0,

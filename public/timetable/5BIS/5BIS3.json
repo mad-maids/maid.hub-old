@@ -23,18 +23,10 @@
       "type": "lecture",
       "start": 16.0,
       "length": 2.0,
-      "location": "IB316"
+      "location": "Lyceum Library"
     }
   ],
   "2": [
-    {
-      "name": "Introduction to Statistics and Data Science",
-      "tutor": "Olmas Isakov",
-      "type": "online",
-      "start": 9.0,
-      "length": 1.0,
-      "location": "Harvard306"
-    },
     {
       "name": "Network Operations",
       "tutor": "Vasiliy Kuznetsov",
@@ -54,7 +46,7 @@
     {
       "name": "Database Systems Development",
       "tutor": "Ito Wasito",
-      "type": "workshop",
+      "type": "seminar",
       "start": 15.0,
       "length": 2.0,
       "location": "New408 CL"
@@ -71,14 +63,6 @@
     }
   ],
   "4": [
-    {
-      "name": "Introduction to Political Economy",
-      "tutor": "Vincenzo Alfano",
-      "type": "seminar",
-      "start": 9.0,
-      "length": 2.0,
-      "location": "ATB207"
-    },
     {
       "name": "Network Operations",
       "tutor": "Vasiliy Kuznetsov",
@@ -100,7 +84,7 @@
     {
       "name": "Fundametals of Programming",
       "tutor": "Vasiliy Kuznetsov",
-      "type": "workshop",
+      "type": "seminar",
       "start": 9.0,
       "length": 2.0,
       "location": "New305 CL"
@@ -119,7 +103,7 @@
       "type": "seminar",
       "start": 15.0,
       "length": 2.0,
-      "location": "ATB310B"
+      "location": "ATB310"
     }
   ],
   "6": [],
