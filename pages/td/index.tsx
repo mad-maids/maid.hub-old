@@ -1,16 +1,14 @@
 import React, { useMemo } from "react";
 import Head from "next/head";
 import { GetStaticProps } from "next/types";
-
 import { promises } from "fs";
-
 import Link from "next/link";
 
 interface Props {
   dirs: string[];
 }
 
-const PostsIndexPage = (props: Props): React.ReactElement => {
+const PostsIndexPageDesktop = (props: Props): React.ReactElement => {
   const [query, setQuery] = React.useState("");
 
   const list = useMemo(
@@ -104,4 +102,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default PostsIndexPage;
+export default PostsIndexPageDesktop;

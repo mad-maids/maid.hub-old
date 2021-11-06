@@ -4,6 +4,7 @@ import Head from "next/head";
 import dateToString from "../../util/dateToString";
 import GroupSelector from "../../components/GroupSelector";
 import DaySelector from "../../components/DaySelector";
+// import GoToGroup from "../../components/GoToGroup";
 import Timetable from "../../components/Timetable";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -76,6 +77,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
             length={groupLength}
           />
           <DaySelector action={day} setAction={setDay} />
+          {/*<GoToGroup action={group} setAction={setGroup} />*/}
         </div>
       </div>
       <div className="mx-4 lg:mx-32 mb-12">
