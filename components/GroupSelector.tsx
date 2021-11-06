@@ -4,36 +4,19 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 const GroupSelector = ({
   action,
   setAction,
+  length
 }: {
   action: any;
   setAction: any;
+  length: number;
 }): React.ReactElement => {
-  const groups = [
-    {
-      name: "1",
-      value: 0,
-    },
-    {
-      name: "2",
-      value: 1,
-    },
-    {
-      name: "3",
-      value: 2,
-    },
-    {
-      name: "4",
-      value: 3,
-    },
-    {
-      name: "5",
-      value: 4,
-    },
-    {
-      name: "6",
-      value: 5,
-    },
-  ];
+
+  const groups = Array.from(Array(length).keys()).map(i => ({
+    name: (i + 1).toString(),
+    value: i
+  }));
+
+  console.log(groups)
 
   const prev = (old: number) => {
     if (old > 0) {
@@ -44,8 +27,7 @@ const GroupSelector = ({
   };
 
   const next = (old: number) => {
-    if (old < 5) {
-      console.log(old + 1);
+    if (old < length - 1) {
       setAction(old + 1);
     } else {
       console.log("exceeded");
@@ -67,26 +49,53 @@ const GroupSelector = ({
             <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
           </a>
 
-          {groups.map((group) => {
-            if (group.value === action) {
+          {(() => {
+            if (parseInt(action) > 2) {
               return (
-                <a className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                  {group.name}
-                </a>
-              );
-            } else {
-              return (
-                <a
-                  onClick={() => {
-                    setAction(group.value);
-                  }}
-                  className="cursor-pointer bg-black border-white text-white hover:bg-white hover:text-black  relative inline-flex items-center px-4 py-2 border text-sm font-medium"
-                >
-                  {group.name}
-                </a>
+                <span className="relative inline-flex items-center px-4 py-2 border border-white bg-black text-sm font-medium text-white">
+                  ...
+                </span>
               );
             }
+          })()}
+
+          {groups.map((group) => {
+            if (
+              parseInt(String(group.value)) === parseInt(action) - 1 ||
+              group.value === action ||
+              parseInt(String(group.value)) === parseInt(action) + 1
+            ) {
+              if (group.value === action) {
+                return (
+                  <a className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                    {group.name}
+                  </a>
+                );
+              } else {
+                return (
+                  <a
+                    onClick={() => {
+                      setAction(group.value);
+                    }}
+                    className="cursor-pointer bg-black border-white text-white hover:bg-white hover:text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+                  >
+                    {group.name}
+                  </a>
+                );
+              }
+            }
           })}
+
+          {(() => {
+            if (parseInt(action) < length - 2) {
+              return (
+                <span className="relative inline-flex items-center px-4 py-2 border border-white bg-black text-sm font-medium text-white">
+                  ...
+                </span>
+              );
+            }
+          })()}
+
           <a
             onClick={() => next(action)}
             className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-white bg-black text-sm font-medium text-white hover:bg-white hover:text-black"

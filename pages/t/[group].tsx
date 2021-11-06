@@ -27,6 +27,7 @@ interface Props {
       }>;
     };
   }>;
+  groups: number
 }
 
 const TimetablePage = (props: Props): React.ReactElement => {
@@ -35,6 +36,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
   const [day, setDay] = useState<string>(today);
   const [table, setTable] = useState<any>();
   const [stringDate, setStringDate] = useState<string>();
+  const groupLength = props.groups;
 
   useEffect(() => {
     if (!group) {
@@ -68,7 +70,7 @@ const TimetablePage = (props: Props): React.ReactElement => {
           <a className="link border rounded-md p-2 ml-2">← Back to overview</a>
         </Link>
         <div className="mt-2 grid gap-2 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
-          <GroupSelector action={group} setAction={setGroup} />
+          <GroupSelector action={group} setAction={setGroup} length={groupLength} />
           <DaySelector action={day} setAction={setDay} />
         </div>
       </div>
@@ -114,7 +116,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     })
   );
   return {
-    props: { group, tables },
+    props: { group, tables, groups: dir.length },
   };
 };
 
