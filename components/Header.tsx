@@ -97,11 +97,11 @@ const Header = ({
                 Posts
               </a>
             </Link>
-            <Link href="/x">
-              <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                LMS
-              </a>
-            </Link>
+            {/*<Link href="/x">*/}
+            {/*  <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">*/}
+            {/*    LMS*/}
+            {/*  </a>*/}
+            {/*</Link>*/}
             <Link href="/t">
               <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
                 Timetable
@@ -205,26 +205,26 @@ const Header = ({
                         </div>
                       </a>
                     </Link>
-                    <Link href="/x">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          LMS
-                        </div>
-                      </a>
-                    </Link>
+                    {/*<Link href="/x">*/}
+                    {/*  <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">*/}
+                    {/*    <svg*/}
+                    {/*      className="flex-shrink-0 h-6 w-6"*/}
+                    {/*      fill="none"*/}
+                    {/*      viewBox="0 0 24 24"*/}
+                    {/*      stroke="currentColor"*/}
+                    {/*    >*/}
+                    {/*      <path*/}
+                    {/*        strokeLinecap="round"*/}
+                    {/*        strokeLinejoin="round"*/}
+                    {/*        strokeWidth="2"*/}
+                    {/*        d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"*/}
+                    {/*      />*/}
+                    {/*    </svg>*/}
+                    {/*    <div className="text-base leading-6 font-medium">*/}
+                    {/*      LMS*/}
+                    {/*    </div>*/}
+                    {/*  </a>*/}
+                    {/*</Link>*/}
                     <Link href="/t">
                       <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
                         <svg
