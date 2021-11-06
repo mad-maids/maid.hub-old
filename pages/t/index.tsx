@@ -37,9 +37,9 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
         />
       </Head>
       <Header subtitle="Posts" type="Times" />
-      <div className="pt-8 pb-20 px-4 sm:px-6 lg:pt-8 lg:pb-28 lg:px-8">
+      <div className="pb-20 px-4 sm:px-6 lg:pt-8 lg:pb-28 lg:px-8">
         <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 pt-4">
-          <div className="mt-12">
+          <div className="mt-6">
             <label htmlFor="query" className="font-medium sr-only">
               Search...
             </label>
