@@ -33,6 +33,10 @@ const DaySelector = ({
       name: "Sat",
       value: "6",
     },
+    {
+      name: "Sun",
+      value: "7",
+    }
   ];
 
   const prev = (old: string) => {
