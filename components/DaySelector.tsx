@@ -36,7 +36,7 @@ const DaySelector = ({
     {
       name: "Sun",
       value: "7",
-    }
+    },
   ];
 
   const prev = (old: string) => {

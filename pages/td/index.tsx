@@ -16,10 +16,7 @@ const PostsIndexPage = (props: Props): React.ReactElement => {
   const list = useMemo(
     () =>
       props.dirs
-        .filter(
-          (course) =>
-            course.toLowerCase().includes(query.toLowerCase())
-        )
+        .filter((course) => course.toLowerCase().includes(query.toLowerCase()))
         .sort((nameA, nameB) => nameA.localeCompare(nameB)),
     [props.dirs, query]
   );
