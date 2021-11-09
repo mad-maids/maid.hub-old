@@ -59,16 +59,8 @@
       "name": "Global Business Environment",
       "tutor": "Nargiza Alimukhamedova",
       "type": "seminar",
-      "start": 15.0,
+      "start": 16.0,
       "length": 2.0,
-      "location": "ATB304"
-    },
-    {
-      "name": "Global Business Environment",
-      "tutor": "Nargiza Alimukhamedova",
-      "type": "workshop",
-      "start": 17.0,
-      "length": 1.0,
       "location": "ATB304"
     }
   ],
@@ -86,6 +78,14 @@
       "tutor": "Abdulaziz Djalilov",
       "type": "workshop",
       "start": 11.0,
+      "length": 1.0,
+      "location": "IB215 CL"
+    },
+    {
+      "name": "Global Business Environment",
+      "tutor": "Nargiza Alimukhamedova",
+      "type": "workshop",
+      "start": 12.0,
       "length": 1.0,
       "location": "IB215 CL"
     }
