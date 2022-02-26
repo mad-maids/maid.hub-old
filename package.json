@@ -21,7 +21,7 @@
     "preact": "^10.5.5",
     "preact-render-to-string": "^5.1.11",
     "prism-react-renderer": "^1.1.1",
-    "prismjs": "^1.22.0",
+    "prismjs": "^1.27.0",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1",
