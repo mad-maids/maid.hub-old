@@ -9,7 +9,8 @@
     "test": "jest",
     "format": "yarn format:check --write",
     "format:check": "prettier --check \"**/*.md\" \"*.js\" \"*.json\" \"{util,public,pages,components}/**/*.{js,ts,jsx,tsx,json}\" \"{util,public,pages,components}/*.{js,ts,jsx,tsx,json}\"",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx util/ pages/ components/"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@prefresh/next": "^1.4.0",

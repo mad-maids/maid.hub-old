@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
+import daySelector from "./DaySelector";
 
 const GroupSelector = ({
   action,
@@ -64,7 +65,7 @@ const GroupSelector = ({
             ) {
               if (group.value === action) {
                 return (
-                  <a className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                  <a key={daySelector.name.toString()} className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
                     {group.name}
                   </a>
                 );
@@ -74,6 +75,7 @@ const GroupSelector = ({
                     onClick={() => {
                       setAction(group.value);
                     }}
+                    key={daySelector.name.toString()}
                     className="cursor-pointer bg-black border-white text-white hover:bg-white hover:text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                   >
                     {group.name}

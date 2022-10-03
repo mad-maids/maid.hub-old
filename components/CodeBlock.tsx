@@ -50,6 +50,7 @@ export const RawCodeBlock = ({
   const [hashValue, setHashValue] = useState("");
   const codeDivClassNames = "token-line text-right select-none text-xs";
   if (enableLineRef) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
       Router.events.on("hashChangeComplete", (url: any) => {
         setHashValue(url.slice(url.indexOf("#")));
@@ -61,6 +62,7 @@ export const RawCodeBlock = ({
       };
     }, []);
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useLayoutEffect(() => {
       const parts = hashValue.split("-");
       if (parts.length > 1) {
@@ -88,7 +90,6 @@ export const RawCodeBlock = ({
       Prism={Prism}
       theme={light}
       code={code}
-      /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
       // @ts-ignore
       language={
         language === "shell" ? "bash" : language === "text" ? "diff" : language

@@ -92,7 +92,7 @@ const DaySelector = ({
             ) {
               if (day.value === action) {
                 return (
-                  <a className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                  <a key={day.name.toString()} className="cursor-pointer z-10 bg-gray-200 border-white text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium">
                     {day.name}
                   </a>
                 );
@@ -102,6 +102,7 @@ const DaySelector = ({
                     onClick={() => {
                       setAction(day.value);
                     }}
+                    key={day.name.toString()}
                     className="cursor-pointer bg-black border-white text-white hover:bg-white hover:text-black relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                   >
                     {day.name}
