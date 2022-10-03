@@ -3,7 +3,13 @@
 
 import React, { useEffect, useState } from "react";
 
-const GoToGroup = ({ action, setAction }: { action: any; setAction: any }): React.ReactElement => {
+const GoToGroup = ({
+  action,
+  setAction,
+}: {
+  action: any;
+  setAction: any;
+}): React.ReactElement => {
   const [group, setGroup] = useState("");
 
   useEffect(() => {
