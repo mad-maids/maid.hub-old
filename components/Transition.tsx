@@ -61,6 +61,7 @@ function CSSTransition({
   }
 
   return (
+    // @ts-ignore
     <ReactCSSTransition
       appear={appear}
       unmountOnExit
