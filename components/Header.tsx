@@ -92,11 +92,6 @@ const Header = ({
           </div>
           <nav className="hidden md:flex space-x-10">
             {homeDetectMenu()}
-            <Link href="/posts">
-              <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">
-                Posts
-              </a>
-            </Link>
             {/*<Link href="/x">*/}
             {/*  <a className="text-base leading-6 font-medium text-white hover:text-gray-200 focus:outline-none focus:text-gray-400 transition ease-in-out duration-150">*/}
             {/*    LMS*/}
@@ -179,32 +174,6 @@ const Header = ({
                 <div>
                   <nav className="grid row-gap-8">
                     {homeDetectResponsive()}
-                    <Link href="/posts">
-                      <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">
-                        <svg
-                          className="flex-shrink-0 h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-                          />
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
-                          />
-                        </svg>
-                        <div className="text-base leading-6 font-medium">
-                          Posts
-                        </div>
-                      </a>
-                    </Link>
                     {/*<Link href="/x">*/}
                     {/*  <a className="-m-3 p-3 flex items-center space-x-3 rounded-md text-white hover:bg-white hover:text-black transition ease-in-out duration-150">*/}
                     {/*    <svg*/}

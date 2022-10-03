@@ -6,7 +6,6 @@ import NProgress from "nprogress";
 import "../components/app.css";
 import "../components/markdown.css";
 import "../components/ngprogress.css";
-import "preact/debug";
 
 NProgress.configure({
   showSpinner: false,

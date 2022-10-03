@@ -1,3 +1,5 @@
+import { join } from "path";
+import { promises } from "fs"
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
@@ -5,9 +7,11 @@ import Footer from "../components/Footer";
 import Notification from "../components/Notification";
 import Link from "next/link";
 
-import { news } from "../news.json";
+interface Props {
+  news: string
+}
 
-export default function Home(): React.ReactElement {
+export default function Home(props: Props): React.ReactElement {
   return (
     <>
       <Head>
@@ -19,7 +23,7 @@ export default function Home(): React.ReactElement {
         />
       </Head>
       <Header subtitle="Home" />
-      <Notification news={news} />
+      <Notification news={props.news} />
       <div className="h-auto">
         <div className="h-auto">
           <div className="flex mt-48 mb-4 justify-center">
@@ -56,4 +60,15 @@ export default function Home(): React.ReactElement {
       <Footer />
     </>
   );
+}
+
+export const getStaticProps = async (): Promise<{ props: { news: any } }> => {
+  const file = await promises.readFile(join('.', 'news.json'), {
+    encoding: 'utf8',
+  })
+  const parsed = JSON.parse(file)
+
+  return {
+    props: { news: parsed.news },
+  }
 }
