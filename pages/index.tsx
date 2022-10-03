@@ -1,5 +1,5 @@
 import { join } from "path";
-import { promises } from "fs"
+import { promises } from "fs";
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
@@ -8,7 +8,7 @@ import Notification from "../components/Notification";
 import Link from "next/link";
 
 interface Props {
-  news: string
+  news: string;
 }
 
 export default function Home(props: Props): React.ReactElement {
@@ -63,12 +63,12 @@ export default function Home(props: Props): React.ReactElement {
 }
 
 export const getStaticProps = async (): Promise<{ props: { news: any } }> => {
-  const file = await promises.readFile(join('.', 'news.json'), {
-    encoding: 'utf8',
-  })
-  const parsed = JSON.parse(file)
+  const file = await promises.readFile(join(".", "news.json"), {
+    encoding: "utf8",
+  });
+  const parsed = JSON.parse(file);
 
   return {
     props: { news: parsed.news },
-  }
-}
+  };
+};
